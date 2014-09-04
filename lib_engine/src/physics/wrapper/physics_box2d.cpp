@@ -461,7 +461,7 @@ namespace pge
     void set_group(Fixture *fixture, u32 group)
     {
       b2Filter filter = to_b2Fixture(fixture)->GetFilterData();
-      filter.groupIndex = (i16)group;
+      filter.groupIndex = group;
       to_b2Fixture(fixture)->SetFilterData(filter);
     }
 

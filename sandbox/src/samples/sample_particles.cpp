@@ -19,7 +19,6 @@ namespace app
 
     void update(f64 dt)
     {
-      (void)dt;
       char buf[512];
       sprintf(buf, "%d", world::num_particles(global_game_world, effect));
       text::set_string(global_gui_world, np_text, buf);

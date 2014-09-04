@@ -278,7 +278,7 @@ namespace app
     {
       ResourceInfo &ri = get_resource_info(er);
 
-      glm::vec3 rotation(0, flip ? 180.f : 0.f, roll);
+      glm::vec3 rotation(0, flip ? 180 : 0.f, roll);
 
       ri.rotation = rotation;
 

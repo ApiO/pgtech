@@ -332,6 +332,9 @@ namespace pge
       
       handle_cmd_args(argc, argv, cfg, sch, src, data);
 
+      //sprintf(src, "E:/[Proto_Gecko]/Clocky/resources");
+      //sprintf(data, "E:/[Proto_Gecko]/Clocky/data");
+
       OUTPUT("%s\n\t\tCompile Server\n%s", LINE, LINE);
 
       thrd_create(&app->compile_manager_thread, compile_manager_func, &app);

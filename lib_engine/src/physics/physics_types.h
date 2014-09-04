@@ -93,9 +93,9 @@ namespace pge
       bool was_touching;
       ContactPoint contact;
     };
-    const void *user_data;
-    void(*touched_callback)   (const Array<ContactPoint> &contacts, const void *user_data);
-    void(*untouched_callback) (const Array<ContactPoint> &actors, const void *user_data);
+
+    void(*touched_callback)   (const Array<ContactPoint> &contacts);
+    void(*untouched_callback) (const Array<ContactPoint> &actors);
     Array<ContactPoint> *result;
     Array<ContactPoint> *contacts;
     Hash<PrevContact>   *prev_contacts;

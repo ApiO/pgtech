@@ -22,7 +22,6 @@ if exist third_party					rd /s /q third_party
 
 if exist tools\json_validator\src  rd /s /q tools\json_validator\src
 
-
 mklink /j lib_compiler\include		..\..\lib_compiler\include
 mklink /j lib_compiler\src			..\..\lib_compiler\src
 mklink /j lib_compiler\schemas	..\..\lib_compiler\schemas

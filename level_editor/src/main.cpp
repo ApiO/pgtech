@@ -158,7 +158,7 @@ namespace app
     if (keyboard::button(KEYBOARD_KEY_Z)){
       ui.camera.move(CAMERA_MOVE_FORWARD, dt);
     }
-    else if (keyboard::button(KEYBOARD_KEY_S) && !keyboard::button(KEYBOARD_KEY_LEFT_CONTROL)){
+    else if (keyboard::button(KEYBOARD_KEY_S)){
       ui.camera.move(CAMERA_MOVE_BACKWARD, dt);
     }
 

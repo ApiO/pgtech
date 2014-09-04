@@ -129,30 +129,30 @@ namespace pge
     void destroy_objects(World &w, u64 unit)
     {
       Allocator &a = *w.units._data._allocator;
-      Unit &u = *idlut::lookup(w.units, unit);
+      Unit *u = idlut::lookup(w.units, unit);
 
-      if (u.player_session)
-        animation_player::destroy_session(w.animation_player, u.player_session);
+      if (u->player_session)
+        animation_player::destroy_session(w.animation_player, u->player_session);
 
-      u32 end = u.actor_offset + u.num_actors;
-      for (u32 i = u.actor_offset; i < end; i++) {
-        physics_system::destroy_actor(w.physics_world, u.components[i].component);
-        hash::remove(w.actor_unit, u.components[i].component);
+      u32 end = u->actor_offset + u->num_actors;
+      for (u32 i = u->actor_offset; i < end; i++) {
+        physics_system::destroy_actor(w.physics_world, u->components[i].component);
+        hash::remove(w.actor_unit, u->components[i].component);
       }
 
-      end = u.sprite_offset + u.num_sprites;
-      for (u32 i = u.sprite_offset; i < end; i++) {
-        sprite_system::destroy(w.sprite_system, u.components[i].component);
-        hash::remove(w.sprite_unit, u.components[i].component);
+      end = u->sprite_offset + u->num_sprites;
+      for (u32 i = u->sprite_offset; i < end; i++) {
+        sprite_system::destroy(w.sprite_system, u->components[i].component);
+        hash::remove(w.sprite_unit, u->components[i].component);
       }
 
-      end = u.mover_offset + u.num_movers;
-      for (u32 i = u.mover_offset; i < end; i++) {
-        physics_system::destroy_mover(w.physics_world, u.components[i].component);
-        hash::remove(w.mover_unit, u.components[i].component);
+      end = u->mover_offset + u->num_movers;
+      for (u32 i = u->mover_offset; i < end; i++) {
+        physics_system::destroy_mover(w.physics_world, u->components[i].component);
+        hash::remove(w.mover_unit, u->components[i].component);
       }
 
-      a.deallocate(u.components);
+      a.deallocate(u->components);
     }
   }
 

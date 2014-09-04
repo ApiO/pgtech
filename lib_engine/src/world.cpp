@@ -71,6 +71,8 @@ namespace
 
   void _despawn_unit(World &w, u64 unit)
   {
+    if(!idlut::has(w.units, unit)) return;
+
     unit::destroy_objects(w, unit);
     idlut::remove(w.units, unit);
   }
