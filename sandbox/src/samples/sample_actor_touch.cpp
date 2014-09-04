@@ -25,7 +25,7 @@ namespace
     char buf[512] = "\0";
     char tmp[64];
 
-    sprintf(tmp, "TOUCHED: %llu", contacts[0].actor);
+    sprintf(tmp, "TOUCHED: %llu - user data: %d", contacts[0].actor, *(i32*)user_data);
     strcat(buf, tmp);
 
     text::set_string(app::global_gui_world, touch_log, buf);
@@ -38,7 +38,7 @@ namespace
     char buf[512] = "\0";
     char tmp[64];
 
-    sprintf(tmp, "UNTOUCHED: %llu", contacts[0].actor);
+    sprintf(tmp, "UNTOUCHED: %llu - user data: %d", contacts[0].actor, *(i32*)user_data);
     strcat(buf, tmp);
 
     text::set_string(app::global_gui_world, touch_log, buf);
@@ -50,6 +50,8 @@ namespace app
 {
   using namespace pge;
 
+  i32 user_data_touch, user_data_untouch;
+
   namespace sample_actor_touch
   {
     void init()
@@ -58,6 +60,9 @@ namespace app
       
       w2 = global_screen.w2;
       h2 = global_screen.h2;
+
+      user_data_touch = 42;
+      user_data_untouch = 24;
 
       circle = world::spawn_actor_circle(global_game_world, h2*0.25f,
                                          true, true, false, true,
@@ -68,8 +73,8 @@ namespace app
                                    false, false, false, false,
                                    "default", "solid", t, q);
 
-      actor::set_touched_callback(global_game_world, box, touch_callback, NULL);
-      actor::set_untouched_callback(global_game_world, box, untouch_callback, NULL);
+      actor::set_touched_callback(global_game_world, box, touch_callback, &user_data_touch);
+      actor::set_untouched_callback(global_game_world, box, untouch_callback, &user_data_untouch);
 
       touch_log = world::spawn_text(global_gui_world, global_font_name, "-LOG-", TEXT_ALIGN_LEFT, glm::vec3(-w2 + 10, h2 - 10, 0.f), glm::quat(IDENTITY_ROTATION));
 
