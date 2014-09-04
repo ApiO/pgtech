@@ -18,7 +18,7 @@ namespace
 
   u64 circle, box;
 
-  void touch_callback(const Array<ContactPoint> &contacts)
+  void touch_callback(const Array<ContactPoint> &contacts, const void *user_data)
   {
     ASSERT(array::size(contacts) == 1);
 
@@ -31,7 +31,7 @@ namespace
     text::set_string(app::global_gui_world, touch_log, buf);
   }
 
-  void untouch_callback(const Array<ContactPoint> &contacts)
+  void untouch_callback(const Array<ContactPoint> &contacts, const void *user_data)
   {
     ASSERT(array::size(contacts) == 1);
 
@@ -68,8 +68,8 @@ namespace app
                                    false, false, false, false,
                                    "default", "solid", t, q);
 
-      actor::set_touched_callback(global_game_world, box, touch_callback);
-      actor::set_untouched_callback(global_game_world, box, untouch_callback);
+      actor::set_touched_callback(global_game_world, box, touch_callback, NULL);
+      actor::set_untouched_callback(global_game_world, box, untouch_callback, NULL);
 
       touch_log = world::spawn_text(global_gui_world, global_font_name, "-LOG-", TEXT_ALIGN_LEFT, glm::vec3(-w2 + 10, h2 - 10, 0.f), glm::quat(IDENTITY_ROTATION));
 

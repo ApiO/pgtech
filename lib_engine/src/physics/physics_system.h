@@ -39,8 +39,8 @@ namespace pge
     void get_velocity  (PhysicsWorld &w, u64 actor, glm::vec3 &v);
     void set_velocity  (PhysicsWorld &w, u64 actor, const glm::vec3 &v);
 
-    void set_touched_callback   (PhysicsWorld &w, u64 actor, void(*callback)(const Array<ContactPoint> &contacts));
-    void set_untouched_callback (PhysicsWorld &w, u64 actor, void(*callback)(const Array<ContactPoint> &contacts));
+    void set_touched_callback   (PhysicsWorld &w, u64 actor, void(*callback)(const Array<ContactPoint> &contacts, const void *user_data), const void *user_data);
+    void set_untouched_callback (PhysicsWorld &w, u64 actor, void(*callback)(const Array<ContactPoint> &contacts, const void *user_data), const void *user_data);
     void set_collision_filter   (PhysicsWorld &w, u64 actor, const char *filter);
 
     void add_impulse   (PhysicsWorld &w, u64 actor, const glm::vec3 &impulse);

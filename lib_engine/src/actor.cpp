@@ -45,16 +45,16 @@ namespace pge
       physics_system::set_velocity(w.physics_world, actor, v);
     }
 
-    void set_touched_callback(u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts))
+    void set_touched_callback(u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts, const void *user_data), const void *user_data)
     {
       World &w = application::world(world);
-      physics_system::set_touched_callback(w.physics_world, actor, callback);
+      physics_system::set_touched_callback(w.physics_world, actor, callback, user_data);
     }
 
-    void set_untouched_callback(u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts))
+    void set_untouched_callback(u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts, const void *user_data), const void *user_data)
     {
       World &w = application::world(world);
-      physics_system::set_untouched_callback(w.physics_world, actor, callback);
+      physics_system::set_untouched_callback(w.physics_world, actor, callback, user_data);
     }
 
     void add_impulse(u64 world, u64 actor, const glm::vec3 &impulse)

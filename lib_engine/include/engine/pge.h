@@ -413,8 +413,8 @@ namespace pge
     //Sets the velocity of the actor. (This call, and all the other calls that change velocity or add forces, only affect physical actors.)
     void set_velocity(u64 world, u64 actor, const glm::vec3 &v);
 
-    void set_touched_callback   (u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts));
-    void set_untouched_callback (u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts));
+    void set_touched_callback   (u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts, const void *user_data), const void *user_data);
+    void set_untouched_callback (u64 world, u64 actor, void(*callback)(const Array<ContactPoint> &contacts, const void *user_data), const void *user_data);
 
     // Returns the actor’s world position, rotation or pose
     void get_world_position(u64 world, u64 actor, glm::vec3 &v);
