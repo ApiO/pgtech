@@ -1,0 +1,13 @@
+#include "common.bt"
+
+struct Unit
+{
+    uint32 name;
+    Pose   pose;
+};
+
+
+uint32 _num_units;
+uint32 _units_offset;
+
+Unit units[_num_units];

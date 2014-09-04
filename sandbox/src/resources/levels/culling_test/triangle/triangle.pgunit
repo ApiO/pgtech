@@ -1,0 +1,13 @@
+{
+	"nodes" : {
+		"root" : {}
+	},
+	"sprites" : {
+		"bot" : {
+			"node" : "root",
+			"template" : "levels/culling_test/triangle/triangle",
+			"translation" : [135, 135],
+			"order" : 0
+		}
+	}
+}

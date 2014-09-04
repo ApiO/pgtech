@@ -1,0 +1,219 @@
+ @import "units/dragon/dragon#dragon"
+ {
+	"sprites" : {
+		"L_rear_leg" : {
+			"node" : "L_rear_leg",
+			"template" : "units/dragon/sprites/L_rear_leg",
+			"order" : 0
+		},
+		"L_rear_thigh" : {
+			"node" : "L_rear_thigh",
+			"template" : "units/dragon/sprites/L_rear_thigh",
+			"order" : 1
+		},
+		"L_wing" : {
+			"node" : "L_wing",
+			"template" : "units/dragon/sprites/L_wing",
+			"order" : 2
+		},
+		"tail6" : {
+			"node" : "tail6",
+			"template" : "units/dragon/sprites/tail6",
+			"order" : 3
+		},
+		"tail5" : {
+			"node" : "tail5",
+			"template" : "units/dragon/sprites/tail5",
+			"order" : 4
+		},
+		"tail4" : {
+			"node" : "tail4",
+			"template" : "units/dragon/sprites/tail4",
+			"order" : 5
+		},
+		"tail3" : {
+			"node" : "tail3",
+			"template" : "units/dragon/sprites/tail3",
+			"order" : 6
+		},
+		"tail2" : {
+			"node" : "tail2",
+			"template" : "units/dragon/sprites/tail2",
+			"order" : 7
+		},
+		"tail1" : {
+			"node" : "tail1",
+			"template" : "units/dragon/sprites/tail1",
+			"order" : 8
+		},
+		"back" : {
+			"node" : "back",
+			"template" : "units/dragon/sprites/back",
+			"order" : 9
+		},
+		"L_front_thigh" : {
+			"node" : "L_front_thigh",
+			"template" : "units/dragon/sprites/L_front_thigh",
+			"order" : 10
+		},
+		"L_front_leg" : {
+			"node" : "L_front_leg",
+			"template" : "units/dragon/sprites/L_front_leg",
+			"order" : 11
+		},
+		"L_front_toe1" : {
+			"node" : "L_front_toe1",
+			"template" : "units/dragon/sprites/L_front_toe1",
+			"order" : 12
+		},
+		"L_front_toe4" : {
+			"node" : "L_front_toe4",
+			"template" : "units/dragon/sprites/L_front_toe4",
+			"order" : 13
+		},
+		"L_front_toe3" : {
+			"node" : "L_front_toe3",
+			"template" : "units/dragon/sprites/L_front_toe3",
+			"order" : 14
+		},
+		"L_front_toe2" : {
+			"node" : "L_front_toe2",
+			"template" : "units/dragon/sprites/L_front_toe2",
+			"order" : 15
+		},
+		"chest" : {
+			"node" : "chest",
+			"template" : "units/dragon/sprites/chest",
+			"order" : 16
+		},
+		"R_rear_toe1" : {
+			"node" : "R_rear_toe1",
+			"template" : "units/dragon/sprites/R_rear_toe1",
+			"order" : 17
+		},
+		"R_rear_toe2" : {
+			"node" : "R_rear_toe2",
+			"template" : "units/dragon/sprites/R_rear_toe2",
+			"order" : 18
+		},
+		"R_rear_toe3" : {
+			"node" : "R_rear_toe3",
+			"template" : "units/dragon/sprites/R_rear_toe3",
+			"order" : 19
+		},
+		"R_rear_leg" : {
+			"node" : "R_rear_leg",
+			"template" : "units/dragon/sprites/R_rear_leg",
+			"order" : 20
+		},
+		"R_rear_thigh" : {
+			"node" : "R_rear_thigh",
+			"template" : "units/dragon/sprites/R_rear_thigh",
+			"order" : 21
+		},
+		"R_front_toe1" : {
+			"node" : "R_front_toe1",
+			"template" : "units/dragon/sprites/R_front_toe1",
+			"order" : 22
+		},
+		"R_front_thigh" : {
+			"node" : "R_front_thigh",
+			"template" : "units/dragon/sprites/R_front_thigh",
+			"order" : 23
+		},
+		"R_front_leg" : {
+			"node" : "R_front_leg",
+			"template" : "units/dragon/sprites/R_front_leg",
+			"order" : 24
+		},
+		"R_front_toe2" : {
+			"node" : "R_front_toe2",
+			"template" : "units/dragon/sprites/R_front_toe2",
+			"order" : 25
+		},
+		"R_front_toe3" : {
+			"node" : "R_front_toe3",
+			"template" : "units/dragon/sprites/R_front_toe3",
+			"order" : 26
+		},
+		"chin" : {
+			"node" : "chin",
+			"template" : "units/dragon/sprites/chin",
+			"order" : 27
+		},
+		"R_wing" : {
+			"node" : "R_wing",
+			"template" : "units/dragon/sprites/R_wing",
+			"order" : 28
+		},
+		"head" : {
+			"node" : "head",
+			"template" : "units/dragon/sprites/head",
+			"order" : 29
+		}
+	},
+	"animations" : {
+		"set" : "units/dragon/dragon",
+		"bones" : {
+			"back" : "back",
+			"neck" : "neck",
+			"chest" : "chest",
+			"R_rear_thigh" : "R_rear_thigh",
+			"tail1" : "tail1",
+			"tail2" : "tail2",
+			"tail3" : "tail3",
+			"tail4" : "tail4",
+			"tail5" : "tail5",
+			"tail6" : "tail6",
+			"R_rear_leg" : "R_rear_leg",
+			"R_rear_toe3" : "R_rear_toe3",
+			"R_rear_toe2" : "R_rear_toe2",
+			"R_rear_toe1" : "R_rear_toe1",
+			"head" : "head",
+			"chin" : "chin",
+			"L_front_thigh" : "L_front_thigh",
+			"R_front_thigh" : "R_front_thigh",
+			"L_front_leg" : "L_front_leg",
+			"L_front_toe1" : "L_front_toe1",
+			"L_front_toe2" : "L_front_toe2",
+			"L_front_toe4" : "L_front_toe4",
+			"L_front_toe3" : "L_front_toe3",
+			"R_front_leg" : "R_front_leg",
+			"R_front_toe1" : "R_front_toe1",
+			"R_front_toe2" : "R_front_toe2",
+			"R_front_toe3" : "R_front_toe3",
+			"L_rear_leg" : "L_rear_leg",
+			"COG" : "COG"
+		},
+		"sprites" : {
+			"L_wing" : {
+				"track" : "L_wing",
+				"frames" : {
+					"L_wing01" : "01",
+					"L_wing02" : "02",
+					"L_wing03" : "03",
+					"L_wing04" : "04",
+					"L_wing05" : "05",
+					"L_wing06" : "06",
+					"L_wing07" : "07",
+					"L_wing08" : "08",
+					"L_wing09" : "09"
+				}
+			},
+			"R_wing" : {
+				"track" : "R_wing",
+				"frames" : {
+					"R_wing01" : "01",
+					"R_wing02" : "02",
+					"R_wing03" : "03",
+					"R_wing04" : "04",
+					"R_wing05" : "05",
+					"R_wing06" : "06",
+					"R_wing07" : "07",
+					"R_wing08" : "08",
+					"L_wing09" : "09"
+				}
+			}
+		}
+	}
+}

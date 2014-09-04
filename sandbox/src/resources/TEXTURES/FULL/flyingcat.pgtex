@@ -1,0 +1,6 @@
+{
+	"type" : "FULL",	
+	"file" : "TEXTURES/FULL/flyingcat.png",
+	"trim" : false,
+	"compression" : "DXT5"
+}

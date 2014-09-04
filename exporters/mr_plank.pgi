@@ -1,0 +1,61 @@
+{
+"units": {
+	"mr_plank": {
+		"nodes": {
+			"root": { }
+		}
+	}
+},
+"unit_presets": {
+	"mr_plank": {
+		"sprites": {
+			"root": { "sprite": "plank", "order": 0 }
+		}
+	}
+},
+"sprites": {
+	"plank": {
+		"frames": {
+			"TEXTURES/plank": { "width": 400, "height" :615, "texture": "TEXTURES/plank" }
+		},
+		"setup_frame": "TEXTURES/plank"
+	}
+},
+"animsets": {
+	"mr_plank": {
+		"tracks": {
+			"bone": {
+				"root": {}
+			},
+			"sprite": {
+			},
+			"event": {
+			}
+		},
+		"animations": {
+			"rotation": {
+				"bone": {
+					"root": {
+						"rotation": [
+							{"time": 0, "value": 0},
+							{"time": 1, "value": 270},
+							{"time": 2, "value": 0}
+						]
+					}
+				}
+			},
+			"translation": {
+				"bone": {
+					"root": {
+						"translation": [
+							{"time": 0, "value": [0, 0], "curve": [0.49, 0.07, 0.587, 0.86]},
+							{"time": 1, "value": [1.04, 175.76], "curve": [0.238, 0.66, 0.812, 0.41]},
+							{"time": 2, "value": [0, 0]}
+						]
+					}
+				}
+			},
+		}
+	}
+}
+}

@@ -1,0 +1,37 @@
+enum<uint16> SequenceMode
+{
+    FORWARD = 0,
+    BACKWARD,
+    FORWARD_LOOP,
+    BACKWARD_LOOP,
+    PINGPONG,
+    RANDOM
+};
+
+struct Pose
+{
+    float tx, ty;
+    float rotate;
+    float sx, sy;
+};
+
+struct Frame
+{
+    uint32 name;
+	uint32 texture_name;
+    uint32 texture_region;
+    Pose   texture_pose;
+	uchar  color[4];
+};
+
+uint16 num_frames;
+uint16 setup_frame; // index of the frame to use by default
+uint16 sequence_fps;
+SequenceMode sequence_mode;
+uint32 sequence_count;
+uint32 sequence_offset;
+uchar  blend_mode;
+
+Frame frames[num_frames];
+if (sequence_count)
+    uint16 sequence_frames[sequence_count]; 

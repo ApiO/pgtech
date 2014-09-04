@@ -1,0 +1,16 @@
+{
+    "name": "Workspace",
+    "main": "tool_center/index.html",
+    "single-instance": false,
+    "window": {
+        "title": "Workspace",
+        "toolbar": false,
+        "frame": false,
+        "position": "center",
+        "resizable": true,
+        "width": 902,
+        "height": 552,
+        "show": true,
+        "dom_storage_quota": 40
+    }
+}

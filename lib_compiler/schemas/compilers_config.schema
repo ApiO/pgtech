@@ -1,0 +1,55 @@
+{
+	"title" : "Compile config description",
+	"type" : "object",
+	"properties" : {
+		"sprite" : {
+			"title" : "sprite  description",
+			"type" : "object",
+			"properties" : {
+				"color" : {
+					"type" : "array",
+					"items" : {
+						"type" : "integer"
+					},
+					"minItems" : 4,
+					"maxItems" : 4,
+					"minimum" : 0,
+					"maximum" : 255
+				}
+			}
+		},
+		"texture" : {
+			"title" : "Texture  description",
+			"type" : "object",
+			"properties" : {
+				"edge_max_size" : {
+					"type" : "integer"
+				},
+				"rotate" : {
+					"type" : "boolean"
+				},
+				"compression" : {
+					"enum" : ["DXT1", "DXT1a", "DXT3", "DXT5", "DXT5n"]
+				},
+				"filter" : {
+					"enum" : ["POINT", "BILINEAR", "TRILINEAR"]
+				},
+				"trim" : {
+					"type" : "boolean"
+				},
+				"flip" : {
+					"type" : "boolean"
+				}
+			}
+		},
+		"unit" : {
+			"title" : "Unit description",
+			"type" : "object",
+			"properties" : {
+				"shader" : {
+					"type" : "string"
+				}
+			}
+		}
+	}
+}

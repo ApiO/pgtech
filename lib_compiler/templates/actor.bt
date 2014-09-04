@@ -1,0 +1,13 @@
+#include "common.bt"
+
+struct Shape
+{
+  uint32 instance_name;
+  uint32 collider;
+  uint32 shape;
+  Pose pose;
+};
+
+uint32 actor;
+uint32 num_shapes;
+Shape  shapes[num_shapes];

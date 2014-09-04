@@ -1,0 +1,47 @@
+#include "common.bt"
+
+struct Material
+{
+  uint32 name;
+  float density;
+  float friction;
+  float restitution;
+};
+
+struct CollisionFilter
+{
+  uint32 name;
+  uint16 is;
+  uint16 collide_with;
+};
+
+struct Actor
+{
+  uint32 name;
+  char  dynamic;
+  char  kinematic;
+  short disable_gravity;
+};
+
+struct Shape
+{
+  uint32 name;
+  uint32 trigger;
+  uint32 collision_filter;
+};
+
+uint32 num_materials;
+uint32 num_collision_filters;
+uint32 num_shapes;
+uint32 num_actors;
+
+uint32 materials_offset;
+uint32 collision_filter_offset;
+uint32 shapes_offset;
+uint32 actor_offset;
+
+
+Material        materials[num_materials];
+CollisionFilter filters[num_collision_filters];
+Shape           shapes[num_shapes];
+Actor           actors[num_actors];

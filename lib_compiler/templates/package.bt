@@ -1,0 +1,18 @@
+struct Type
+{
+    uint32 name;
+    uint32 num_resources;
+    uint32 resource_offset;
+};
+
+local uint32 i;
+local uint32 total_resources = 0;
+
+uint32 num_types;
+
+for(i = 0; i < num_types; i++) {
+    Type types;
+    total_resources += types[i].num_resources;
+}
+
+uint32 resources[total_resources];

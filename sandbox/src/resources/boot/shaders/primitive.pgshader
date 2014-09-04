@@ -1,0 +1,4 @@
+{
+	"vertex" : "boot/shaders/primitive_vs.glsl",
+	"fragment" : "boot/shaders/primitive_fs.glsl"
+}

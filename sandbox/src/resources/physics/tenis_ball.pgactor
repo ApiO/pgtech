@@ -1,0 +1,10 @@
+{
+	"template" : "full_physics",
+	"shapes" : {
+		"boball" : {
+			"template" : "default",
+			"material" : "bouncer",
+			"shape" : "physics/circle_1"
+		}
+	}
+}

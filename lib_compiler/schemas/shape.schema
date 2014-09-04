@@ -1,0 +1,43 @@
+{
+	"title" : "Shape description",
+	"type"  : "object",
+	"anyOf" : [{
+			"title" : "Circle description",
+			"type"  : "object",
+			"properties" : {
+				"type"   : { "enum" : ["CIRCLE"] },
+				"radius" : { "type" : "number" } 
+            },
+			"required" : ["type", "radius"],
+			"additionalProperties" : false
+		}, {
+			"title" : "Segment description",
+			"type"  : "object",
+			"properties" : {
+				"type"  : { "enum" : ["CHAIN"] },
+				"value" : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 4 }
+			},
+			"required" : ["type", "value"],
+			"additionalProperties" : false
+		}, {
+			"title" : "Box description",
+			"type"  : "object",
+			"properties" : {
+				"type"   : { "enum" : ["BOX"]  },
+				"width"  : { "type" : "number" },
+				"height" : { "type" : "number" }
+			},
+			"required" : ["type", "width", "height"],
+			"additionalProperties" : false
+		}, {
+			"title" : "Polygon description",
+			"type"  : "object",
+			"properties" : {
+				"type"  : { "enum" : ["POLYGON"] },
+				"value" : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 6 }
+			},
+			"required" : ["type", "value"],
+			"additionalProperties" : false
+		}
+	]
+}

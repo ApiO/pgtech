@@ -1,0 +1,56 @@
+{
+"units": {
+	"skeleton": {
+		"nodes": {
+			"root": { },
+			"torso": { "parent": "root", "translation": [0.0, 150.9]},
+			"head": { "parent": "torso", "translation": [0.0, 122.06]},
+			"left_arm": { "parent": "torso", "translation": [-43.4, 0.0]},
+			"left_foot": { "parent": "torso", "translation": [-55.35, -93.72], "rotation":  [0.0, 0.0, -40.52]},
+			"right_arm": { "parent": "torso", "translation": [76.73, -5.03], "rotation": [0.0, 0.0, 58.23]},
+			"right_foot": { "parent": "torso", "translation": [53.46, -94.34], "rotation": [0.0, 0.0, 40.44]}
+		}
+	}
+},
+"unit_presets": {
+	"skeleton": {
+		"sprites": {
+			"torso": { "sprite": "torso", "order": 0 },
+			"head": { "sprite": "head", "order": 1 },
+			"left_arm": { "sprite": "left_arm", "order": 2 },
+			"left_foot": { "sprite": "left_foot", "order": 3 },
+			"right_arm": { "sprite": "right_arm", "order": 4 },
+			"right_foot": { "sprite": "right_foot", "order": 5 }
+		}
+	}
+},
+"sprites": {
+	"head": {
+		"frames": { "patate" : { "rotation": [0.0, 0.0, 34.78], "texture": "TEXTURES/FULL/patate" }},
+		"setup_frame": "patate"
+	},
+	"left_arm": {
+		"frames": { "mr_patate_block": { 
+			"translation": [-38.36, 0.0], 
+			"rotation": [0.0, 0.0, -64.39], 
+			"texture": "TEXTURES/FULL/mr_patate_block" }},
+		"setup_frame": "mr_patate_block"
+	},
+	"left_foot": {
+		"frames": {"mr_patate_block": { "texture": "TEXTURES/FULL/mr_patate_block" }},
+		"setup_frame": "mr_patate_block"
+	},
+	"right_arm": {
+		"frames": {"mr_patate_block": { "texture": "TEXTURES/FULL/mr_patate_block" }},
+		"setup_frame": "mr_patate_block"
+	},
+	"right_foot": {
+		"frames": {"mr_patate_block": { "texture": "TEXTURES/FULL/mr_patate_block" }},
+		"setup_frame": "mr_patate_block"
+	},
+	"torso": {
+		"frames": {"mr_patate_block": { "translation": [-1.68, -0.42], "texture": "TEXTURES/FULL/mr_patate_block" }},
+		"setup_frame": "mr_patate_block"
+	}
+}
+}

@@ -1,0 +1,60 @@
+{
+	"title" : "Sprite title",
+	"type"  : "object",
+	"properties" : {
+		"blend_mode" : {
+			"title" : "Blend mode",
+			"enum"  : ["normal", "multiply", "screen", "overlay", "additive"]
+		},
+		"setup_frame" : {
+			"title" : "Name of the default sprite's frame",
+			"type"  : "string"
+		},
+		"frames" : {
+			"title" : "Sprite's frames list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Frame title",
+				"type"  : "object",
+				"properties" : {
+					"translation"   : { "type" : "array", "minItems" : 2, "maxItems" : 3, "items" : { "type" : "number" } },
+					"rotation"      : { "type" : "array", "minItems" : 3, "maxItems" : 3, "items" : { "type" : "number" } },
+					"scale"         : { "type" : "array", "minItems" : 2, "maxItems" : 2, "items" : { "type" : "number" } },
+					"color"         : { "type" : "array", "minItems" : 4, "maxItems" : 4, "items" : { "type" : "integer", "minimum" : 0, "maximum" : 255 } },
+					"texture"       : { "type" : "string" }
+				},
+				"required" : ["texture"]
+			},
+			"minProperties": 1
+		},
+		"sequence " : {
+			"title" : "Frame's names to display for automatic animation",
+			"type" : "array",
+			"items" : { "type" : "string" },
+			"minItems" : 1
+		}
+	},
+	"dependencies" : {
+		"sequence" : {
+			"properties" : {
+				"fps" : {
+					"title" : "Frame number per second value of animation",
+					"type" : "integer",
+					"minimum" : 1
+				},
+				"mode" : {
+					"title" : "Frame change mode",
+					"enum" : [
+						"FORWARD",
+						"FORWARD_LOOP",
+						"BACKWARD_LOOP",
+						"PINGPONG",
+						"RANDOM"
+					]
+				}
+			},
+			"required" : ["fps"]
+		}
+	},
+	"required" : ["setup_frame", "frames"]
+}

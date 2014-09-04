@@ -1,0 +1,19 @@
+{
+	"title" : "Particle Emitter",
+	"type"  : "object",
+	"properties" : {
+		"loop"          : {"type" : "boolean" },
+		"rate"          : {"type" : "number"  },
+		"speed"         : {"type" : "number"  },
+		"angle"         : {"type" : "number", "min": 0, "max": 360  },
+		"texture"       : {"type" : "string"  },
+		"lifespan"      : {"type" : "number"  },
+		"box"           : {"type" : "array", "minItems" : 3, "maxItems" : 3, "items" : { "type" : "number" }},
+		"color_start"   : {"type" : "array", "minItems" : 4, "maxItems" : 4, "items" : { "type" : "integer", "minimum" : 0, "maximum" : 255 }},
+		"color_end"     : {"type" : "array", "minItems" : 4, "maxItems" : 4, "items" : { "type" : "integer", "minimum" : 0, "maximum" : 255 }},
+		"scale_start"   : {"type" : "array", "minItems" : 3, "maxItems" : 3, "items" : { "type" : "number" }},
+		"scale_end"     : {"type" : "array", "minItems" : 3, "maxItems" : 3, "items" : { "type" : "number" }},
+		"gravity"       : {"type" : "array", "minItems" : 3, "maxItems" : 3, "items" : { "type" : "number" }}
+	},
+	"required" : ["speed", "rate", "texture", "lifespan"]
+}

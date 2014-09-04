@@ -1,0 +1,18 @@
+{
+	"nodes" : {
+		"root" : {}
+	},
+	"sprites" : {
+		"ball" : {
+			"node" : "root",
+			"template" : "sprites/tenis_ball",
+			"order" : 0
+		}
+	},
+	"actors" : {
+		"my_ball" : {
+			"node" : "root",
+			"actor" : "physics/tenis_ball"
+		}
+	}
+}

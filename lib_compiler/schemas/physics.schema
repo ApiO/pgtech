@@ -1,0 +1,74 @@
+{
+	"title" : "Unit description",
+	"type"  : "object",
+	"properties" : {
+		"ppm" : {
+			"title" : "Pixel per meter constant",
+			"type"  : "integer"
+		},
+		"materials" : {
+			"title" : "Materials list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Material description",
+				"type " : "object",
+				"properties" : {
+					"density"       : { "type" : "number" },
+					"friction"      : { "type" : "number" },
+					"restitution"   : { "type" : "number" }
+				},
+				"required" : ["density", "friction", "restitution"],
+				"additionalProperties" : false
+			}
+		},
+		"collision_types" : {
+			"title" : "Collisions type",
+			"type"  : "array",
+			"items" : { "type" : "string" }, "minItems" : 1, "maxItems" : 32 },
+		"collision_filters" : {
+			"title" : "Collisions list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Collision description",
+				"type"  : "object",
+				"properties" : {
+					"is"            : { "type" : "array", "minItems" : 1, "items" : { "type" : "string" } },
+					"collides_with" : { "type" : "array", "minItems" : 1, "items" : { "type" : "string" } }
+				},
+				"required" : ["is", "collides_with"],
+				"additionalProperties" : false
+			}
+		},
+		"shapes" : {
+			"title" : "Shape list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Shape description",
+				"type"  : "object",
+				"properties" : {
+					"trigger"           : { "type" : "boolean" },
+					"collision_filter"  : { "type" : "string" }
+				},
+				"required" : ["collision_filter"],
+				"additionalProperties" : false
+			}
+		},
+		"actors" : {
+			"title" : "Actors list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Actor description",
+				"type"  : "object",
+				"properties" : {
+					"dynamic"           : { "type" : "boolean" },
+					"kinematic"         : { "type" : "boolean" },
+					"disable_gravity"   : { "type" : "boolean" }
+				},
+				"required" : ["dynamic", "kinematic"],
+				"additionalProperties" : false
+			}
+		}
+	},
+	"required" : ["ppm", "actors", "shapes", "materials"],
+	"additionalProperties" : false
+}

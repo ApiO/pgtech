@@ -1,0 +1,7 @@
+{
+	"type" : "FULL",	
+	"file" : "TEXTURES/FULL/bigD.png",
+	"trim" : true,
+	"compression" : "DXT5",
+	"transparent_color" : [122, 95, 238]
+}

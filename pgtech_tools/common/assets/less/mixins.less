@@ -1,0 +1,11 @@
+.make-nav-depth(@depth, @pad-inc) when (@depth < @nav-max-depth)
+{
+  .nav
+  {
+  	@pad: (@depth+1) * @pad-inc;
+    >li > a {
+      padding-left: ~"@{pad}px";
+    }
+    .make-nav-depth(@depth + 1, @pad-inc);
+  }
+}

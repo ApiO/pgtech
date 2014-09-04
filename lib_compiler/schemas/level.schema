@@ -1,0 +1,22 @@
+{
+	"title" : "Level description",
+	"type" : "object",
+	"properties" : {
+		"units" : {
+			"title" : "units list",
+			"type" : "array",
+			"items" : {
+				"title" : "unit description",
+				"type" : "object",
+				"properties" : {
+					"name"          : { "type" : "string" },
+					"translation"   : { "type" : "array", "minItems" : 2, "maxItems" : 3, "items" : { "type" : "number" } },
+					"rotation"      : { "type" : "array", "minItems" : 3, "maxItems" : 3, "items" : { "type" : "number" } },
+					"scale"         : { "type" : "array", "minItems" : 2, "maxItems" : 2, "items" : { "type" : "number" } },
+					"shear"         : { "type" : "array", "minItems" : 2, "maxItems" : 2, "items" : { "type" : "number" } }
+				},
+				"required" : ["name", "translation"]
+			}
+		}
+	}
+}

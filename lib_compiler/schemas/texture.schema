@@ -1,0 +1,53 @@
+{
+	"title" : "Sprite title",
+	"type"  : "object",
+	"properties" : {
+		"type"          : { "enum" : ["FULL", "TILESET", "ATLAS"] },
+		"compression"   : { "enum" : ["DXT1", "DXT1a", "DXT3", "DXT5", "DXT5n"] },
+		"filter"        : { "enum" : ["POINT", "BILINEAR", "TRILINEAR"] },
+		"trim"          : { "type" : "boolean" },
+		"flip"          : { "type" : "boolean" },
+		"spacing"       : { "type" : "integer" }
+	},
+	"anyOf" : [{
+			"title" : "Texture atlas title",
+			"type"  : "object",
+			"properties" : {
+				"type" : { "enum" : ["ATLAS"] },
+				"regions" : {
+					"type" : "object",
+					"additionalProperties" : {
+						"title" : "Atlas region item",
+						"type"  : "object",
+						"properties" : {
+							"file"      : { "type": "string" },
+							"position"  : { "type" : "array", "minItems" : 2, "maxItems" : 2, "items" : { "type" : "integer" } },
+							"size"      : { "type" : "array", "minItems" : 2, "maxItems" : 2, "items" : { "type" : "integer" } }
+						},
+						"required" : ["file"],
+						"dependencies": { "position": ["size"] }
+					}
+				}
+			},
+			"required" : ["type", "regions"]
+		}, {
+			"title" : "Texture full title",
+			"type"  : "object",
+			"properties" : {
+				"type" : { "enum" : ["FULL"] },
+				"file" : { "type" : "string" }
+			},
+			"required" : ["type", "file"]
+		}, {
+			"title" : "Texture tileset title",
+			"type"  : "object",
+			"properties" : {
+				"type"          : { "enum" : ["TILESET"] },
+				"file"          : { "type" : "string" },
+				"tile_size"     : { "type" : "array", "items" : { "type" : "integer", "minimum" : 0, "maximum" : 65535 }, "minItems" : 2, "maxItems" : 2 },
+				"tile_spacing"  : { "type" : "integer", "minimum" : 0, "maximum" : 255 }
+			},
+			"required" : ["type", "file", "tile_size"]
+		}
+	]
+}

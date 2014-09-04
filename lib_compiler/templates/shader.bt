@@ -1,0 +1,14 @@
+
+uint32 vertex_shader_offset;
+uint32 vertex_shader_size;
+uint32 fragment_shader_size;
+
+if(vertex_shader_size > 0)
+{
+    char vertex_shader_source[vertex_shader_size];
+}
+
+if(fragment_shader_size > 0)
+{
+    char fragment_shader_source[fragment_shader_size];
+}

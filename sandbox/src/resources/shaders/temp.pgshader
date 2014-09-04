@@ -1,0 +1,4 @@
+{
+	"vertex" : "shaders/sample_vs.glsl",
+	"fragment" : "shaders/sample_fs.glsl"
+}

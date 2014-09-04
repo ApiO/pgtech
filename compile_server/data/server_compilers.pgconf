@@ -1,0 +1,20 @@
+{
+	"sprite" : {
+		"color" : [255, 255, 255, 255]
+	},
+	"texture" : {
+		"edge_max_size" : 512,
+		"rotate" : false,
+		"compression" : "DXT5",
+		"mipmap" : "NONE",
+		"trim" : false,
+		"flip" : false
+	},
+	"actor" : {
+		"shader" : "fdsff/sdfdfdfs"
+	},
+  "sound" : {
+    "compression": "PCM",
+    "in_memory_duration": 1000
+  }
+}

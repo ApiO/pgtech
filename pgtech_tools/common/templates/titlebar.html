@@ -1,0 +1,9 @@
+<header class="title-bar">
+	<span class="title" ng-transclude></span>
+    <div class="controls">
+        <a class="minimize-app icon-minus" tooltip="Minimize" tooltip-placement="bottom" tooltip-popup-delay="500" ng-click="minimize()" ng-show="minimizable"></a>
+        <a class="maximize-app icon-expand" tooltip="Maximize" tooltip-placement="bottom" tooltip-popup-delay="500" ng-click="maximize()" ng-show="!maximized && maximizable"></a>
+        <a class="unmaximize-app icon-contract" tooltip="Unmaximize" tooltip-placement="bottom" tooltip-popup-delay="500" ng-click="unmaximize()" ng-show="maximized && maximizable"></a>
+        <a class="close-app icon-close" tooltip="Close" tooltip-placement="left" tooltip-popup-delay="500" ng-click="close()" ng-show="closable"></a>
+    </div>
+</header>

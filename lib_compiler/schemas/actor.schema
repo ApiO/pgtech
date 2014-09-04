@@ -1,0 +1,26 @@
+{
+	"title" : "Actor description",
+	"type" : "object",
+	"properties" : {
+		"template" : {
+			"title" : "actor template defined in .pgphys",
+			"type" : "string"
+		},
+		"shapes" : {
+			"title" : "Actor's shapes",
+			"type" : "object",
+			"additionalProperties" : {
+				"title" : "Shape instance",
+				"type" : "object",
+				"properties" : {
+					"template "     : { "type" : "string" },
+					"material"      : { "type" : "string" },
+					"shape "        : { "type" : "string" },
+					"translation"   : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 3 },
+					"rotation"      : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 3, "maxItems" : 3 },
+					"scale"         : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 2 }
+				}
+			}
+		}
+	}
+}

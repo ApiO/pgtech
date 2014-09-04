@@ -1,0 +1,12 @@
+{
+	"loop"       : true,
+	"rate"       : 200,
+	"speed"      : 200,
+	"texture"    : "TEXTURES/FULL/patate",
+	"lifespan"   : 3.0,
+	"angle"      : 45,
+	"gravity"    : [0, 100, 0],
+	"color_start": [255, 255, 0, 255],
+	"color_end"  : [255, 0, 0, 0],
+	"box"        : [20, 10, 0]
+}

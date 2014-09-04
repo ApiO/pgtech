@@ -1,0 +1,716 @@
+{
+	"units" : [
+		{
+			"name" : "units/ground",
+			"translation" : [226.529999, -451.722992, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [696.685974, -457.992004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1204.454956, -487.246002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1480.279053, -424.558990, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1641.177002, -351.423004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1822.970947, -282.467010, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1925.359985, -234.406998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2086.258057, -186.345993, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2228.350098, -132.016998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2326.560059, -83.957001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2443.576904, -19.180000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1085.348022, -457.992004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-87.008003, -457.582001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-149.695999, -432.506989, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-222.830994, -380.266998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-275.071014, -325.937988, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-325.221008, -275.787994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-362.833008, -246.533997, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-446.415985, -171.309006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-471.490997, -146.233994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-500.744995, -112.801003, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-530.000000, -77.278000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-573.880981, -33.396000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-596.866028, -12.501000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-630.299011, 31.381001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-655.374023, 85.709999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-680.448975, 119.142998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-711.793030, 156.755005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1108.233032, -549.523010, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [901.364014, -543.255005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [564.940979, -545.343994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [364.342010, -549.523010, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [161.651993, -555.791992, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [15.381000, -551.612976, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [270.309998, -530.716980, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1069.979004, -398.946014, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1069.979004, -375.441986, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1098.437012, 337.933014, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-925.083984, 257.303986, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-868.643005, 233.115005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1098.436035, 313.743988, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1021.838989, 289.554993, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1098.437012, 273.429993, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-783.982971, 184.737000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1090.373047, 237.145996, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-751.731018, 172.643005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1209.562012, -134.410995, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1186.968994, 347.067993, 0.000000],
+			"rotation" : [0.000000, 3.141593, 1.570796]
+		},{
+			"name" : "units/ground",
+			"translation" : [-719.479980, 172.643005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-751.731018, 309.713013, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-723.510986, 212.957993, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-751.731018, 333.901001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-739.637024, 257.303986, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1531.594971, 336.308014, 0.000000]
+		},{
+			"name" : "units/dragon/dragon",
+			"translation" : [2360.633057, 1251.156006, 0.000000],
+			"rotation" : [0.000000, 3.141593, 0.698132],
+			"scale" : [3.000000, 3.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1165.537964, 829.411987, 0.000000],
+			"rotation" : [0.000000, 3.141593, 1.570796]
+		},{
+			"name" : "units/ground",
+			"translation" : [845.380005, 1029.607056, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [834.932983, 1029.607056, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [782.700989, 982.598022, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [756.585022, 951.257996, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [733.080994, 922.531006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [720.021973, 906.861023, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [693.906006, 875.521973, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [667.789978, 849.406006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [659.955017, 841.570984, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [644.286011, 815.455017, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [626.004028, 747.552979, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [623.393005, 692.708984, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [620.781006, 619.583984, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [618.169006, 538.624023, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [618.169006, 483.779999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [665.177979, 293.131989, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [644.286011, 402.820007, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [641.674011, 379.315002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [662.567017, 319.247986, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [680.848022, 264.403992, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [688.682983, 222.617996, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [704.353027, 191.279007, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [709.575989, 186.054993, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [733.080994, 149.492996, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [748.750000, 131.212006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [753.973022, 118.153999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [764.419983, 99.872002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [785.312988, 73.755997, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [808.817017, 50.251999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [840.156982, 31.969999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [866.273010, 8.466000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [879.330994, -4.592000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [563.325989, -25.485001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [534.598022, -12.427000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [505.869995, 24.135000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [471.919006, 60.698002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [445.803009, 92.037003, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [406.628998, 139.046005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [330.891998, 238.287994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [307.386993, 285.296997, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [281.270996, 355.809998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [252.544006, 402.820007, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [247.320007, 457.662994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [242.097000, 507.283997, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [239.485001, 572.573975, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [244.709000, 622.195007, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [255.154999, 708.377991, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [307.386993, 891.190979, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [328.279999, 771.057007, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [312.610992, 823.289001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [336.337006, 965.431030, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [375.510986, 986.323975, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [396.403992, 1009.828003, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [419.908997, 1033.333008, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [435.579010, 1051.614014, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [443.412994, 1056.837036, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [981.406006, 1111.681030, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [824.708984, 1090.787964, 0.000000]
+		},{
+			"name" : "units/spineboy/spineboy_mover",
+			"translation" : [-569.440002, 374.850006, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-337.790009, 493.302002, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [1779.425049, 493.302002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-630.788025, -488.515991, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [2539.881104, 1270.506958, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [1578.423950, 1481.558960, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [787.817993, 1565.310059, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [486.316010, 1367.657959, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [1310.421997, 771.354004, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [3397.487061, 1528.458984, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [3260.135986, 242.050003, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-310.989990, 838.354004, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-647.742981, 1793.755005, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-1334.498047, 1720.053955, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-1776.701050, 1468.802979, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-2091.604004, 1070.150024, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-1756.600952, 721.747009, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-952.594971, 775.346985, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-781.744019, 1210.850952, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3328.103027, -49.087002, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-1797.305054, 136.026993, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-2225.104004, -332.692993, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-1105.385986, -191.332993, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [1654.852051, -31.372999, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [2815.490967, -258.292999, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [3429.291016, -209.932999, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [2997.770996, 1772.826050, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [1487.452026, 2118.784912, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [2450.930908, 1207.385986, 0.000000]
+		},{
+			"name" : "units/myball",
+			"translation" : [-1071.906006, 1750.505981, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-678.046997, 74.109001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-675.057983, 50.201000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3860.254883, -16.834999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-657.127014, -27.499001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3735.280029, -4.741000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3686.903076, -20.867001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3799.782959, -28.930000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3832.034912, -24.898001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3509.518066, -32.960999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3432.919922, -32.960999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3384.542969, -36.992001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-547.851990, -340.596985, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-564.484985, -430.941986, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-531.612000, -454.850006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-489.773010, -484.734009, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-421.039001, -526.572998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-379.200012, -544.504028, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-358.281006, -547.492004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1467.672974, -565.422974, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1545.373047, -538.526978, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1623.072998, -520.596008, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1712.727051, -481.746002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1769.508057, -460.826996, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1832.265991, -430.941986, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1898.011963, -392.092010, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1924.907959, -374.161011, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [1978.699951, -332.321991, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2011.572998, -308.415009, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2065.365967, -275.541992, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2104.216064, -251.634003, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2131.113037, -224.738007, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2152.031982, -209.794998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2193.870117, -179.910995, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2232.719971, -153.014008, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2295.478027, -117.153000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2719.841064, -60.372002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2917.080078, -0.603000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3278.684082, -9.568000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-937.177979, -16.834999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-957.335022, 47.667999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-981.523987, 112.170998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-763.825989, -254.690994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2879.863037, 281.812988, 0.000000],
+			"rotation" : [0.000000, 3.141593, 1.570796]
+		},{
+			"name" : "units/ground",
+			"translation" : [-921.052002, -113.589996, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-856.549011, -178.093994, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1005.713013, 152.485992, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-808.171021, -230.503006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-884.768982, -157.936005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-961.367004, -12.804000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-945.241028, -69.244003, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-981.523987, 47.667999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1037.963989, 172.643005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1005.713013, 96.044998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1074.246948, 212.957993, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2855.061035, 755.479980, 0.000000],
+			"rotation" : [0.000000, 3.141593, 1.570796]
+		},{
+			"name" : "units/ground",
+			"translation" : [-1017.807007, 136.360001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-917.020996, -57.150002, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-884.768982, -170.031006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-820.265991, -311.131989, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-800.109009, -387.729004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2531.566895, 205.602005, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2504.670898, 250.429001, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2468.809082, 313.187012, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2420.993896, 393.875000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2385.132080, 450.656006, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2349.270020, 546.286987, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2343.292969, 597.091003, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2337.315918, 638.929016, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-779.952026, -432.075989, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2334.327881, 779.387024, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2349.270020, 842.145020, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2382.144043, 898.926025, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2316.608887, 715.854004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2442.913086, 941.263977, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2501.681885, 973.638000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-582.409973, -508.673004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2579.382080, 1012.487976, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [-433.246002, -553.018982, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2633.175049, 1039.384033, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2633.175049, 1042.373047, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3111.330078, -99.222000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2227.514893, -375.635010, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2421.024902, -311.131989, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2537.937988, -299.036987, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2711.290039, -262.753998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2791.918945, -242.597000, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2884.643066, -214.376999, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [2985.428955, -190.188004, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3110.404053, -141.809998, 0.000000]
+		},{
+			"name" : "units/ground",
+			"translation" : [3251.504883, -81.338997, 0.000000]
+		},{
+			"name" : "units/spineboy/spineboy",
+			"translation" : [357.238953, -400.308105, 0.000000],
+			"scale" : [0.680000, 0.680000]
+		}	]
+}

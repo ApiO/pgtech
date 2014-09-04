@@ -1,0 +1,6 @@
+{
+	"file": "sfx/helicopter_approach.wav",
+	"compression": "PCM",
+	"bus": "sfx",
+	"range": 640
+}

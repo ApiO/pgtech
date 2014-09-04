@@ -1,0 +1,25 @@
+{
+	"layers" : [
+	{
+			"name" : "test",
+			"z" : -1.000000,
+			"visible" : false
+		},{
+			"name" : "Layer",
+			"z" : 0.000000,
+			"visible" : true
+		},{
+			"name" : "yohohhooo",
+			"z" : 1.000000,
+			"visible" : true,
+			"selected" : true
+		}],
+	"units" : [
+		{
+			"name" : "units/dragon/dragon",
+			"translation" : [485.537750, -324.380615, 0.000000],
+			"rotation" : [0.000000, 180.000000, 41.105450],
+			"scale" : [3.000000, 3.000000],
+			"layer" : 1
+		}]
+}

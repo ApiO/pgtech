@@ -1,0 +1,24 @@
+{
+	"type" : "ATLAS",
+	"regions" : {
+		"step_0" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [1,3],    "size" : [13,58] } ,
+		"step_1" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [17,8],   "size" : [15,52] } ,
+		"step_2" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [33,17],  "size" : [21,44] } ,
+		"step_3" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [52,27],  "size" : [33,33] } ,
+		"step_4" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [92,1],   "size" : [33,59] } ,
+		"step_5" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [126,37], "size" : [39,24] } ,
+		"step_6" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [166,34], "size" : [50,27] } ,
+		"step_7" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [218,28], "size" : [66,33] } ,
+		"step_8" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [285,27], "size" : [66,33] } ,
+		"step_9" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [352,26], "size" : [66,34] } ,
+		"step_10" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [421,25], "size" : [67,35] } ,
+		"step_11" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [494,29], "size" : [36,28] } ,
+		"step_12" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [531,22], "size" : [32,36] } ,
+		"step_13" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [568,15], "size" : [31,41] } ,
+		"step_14" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [602,10], "size" : [26,47] } ,
+		"step_15" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [633,5],  "size" : [28,51] } ,
+		"step_16" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [662,6],  "size" : [26,49] } ,
+		"step_17" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [690,6],  "size" : [26,52] } ,
+		"step_18" 	: { "file" : "TEXTURES/ATLAS/megaman_spawn.png", "position" : [723,7],  "size" : [34,53] }
+	}
+}

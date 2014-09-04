@@ -1,0 +1,18 @@
+{
+	"title" : "Unit description",
+	"type" : "object",
+	"anyOf" : [{
+			"title" : "Vertex shader resource name",
+			"type" : "object",
+			"properties" : {
+				"vertex" : { "type" : "string" }
+			}
+		}, {
+			"title" : "Fragment shader resource name",
+			"type" : "object",
+			"properties" : {
+				"fragment" : { "type" : "string" }
+			}
+		}
+	]
+}

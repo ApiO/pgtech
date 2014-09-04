@@ -1,0 +1,34 @@
+{
+  "units":[
+    "units/mr_patate",
+    "units/spineboy/spineboy",
+    "units/mr_plank/mr_plank",
+    "units/dragon/dragon",
+    "units/spineboy/spineboy_mover",
+    "units/plateforms/plateform00",
+    "units/plateforms/plateform01",
+    "units/plateforms/plateform02",
+	"fx/fxImpact00/fxImpact00"
+  ],
+  "sprites":[
+    "sprites/bg",
+    "sprites/gradient_normal",
+    "sprites/gradient_overlay",
+    "sprites/gradient_multiply",
+    "sprites/gradient_screen"
+  ],
+  "fonts":[
+    "fonts/consolas.24/consolas.24"
+  ],
+  "sounds":[
+    "sfx/helicopter_approach",
+    "sfx/toke_and_exhale",
+    "sfx/shell_fall"
+  ],
+  "levels":[
+    "levels/culling_test/level"
+  ],
+  "particles": [
+    "particles/potatoe_fire"
+  ]
+}

@@ -1,0 +1,35 @@
+ @import "units/mr_patate#skeleton"
+ {
+	"sprites" : {
+		"torso" : {
+			"node" : "torso",
+			"template" : "units/mr_patate/torso",
+			"order" : 0
+		},
+		"head" : {
+			"node" : "head",
+			"template" : "units/mr_patate/head",
+			"order" : 1
+		},
+		"left_arm" : {
+			"node" : "left_arm",
+			"template" : "units/mr_patate/left_arm",
+			"order" : 2
+		},
+		"left_foot" : {
+			"node" : "left_foot",
+			"template" : "units/mr_patate/left_foot",
+			"order" : 3
+		},
+		"right_arm" : {
+			"node" : "right_arm",
+			"template" : "units/mr_patate/right_arm",
+			"order" : 4
+		},
+		"right_foot" : {
+			"node" : "right_foot",
+			"template" : "units/mr_patate/right_foot",
+			"order" : 5
+		}
+	}
+}

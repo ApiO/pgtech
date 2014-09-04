@@ -1,0 +1,25 @@
+{
+	"type" : "ATLAS",
+	"regions" : {
+		"TEXTURES/ATLAS/gob/head.png": { "file": "TEXTURES/ATLAS/gob/head.png" }, 
+		"TEXTURES/ATLAS/gob/left-arm.png": { "file": "TEXTURES/ATLAS/gob/left-arm.png" },
+		"TEXTURES/ATLAS/gob/left-foot.png": { "file": "TEXTURES/ATLAS/gob/left-foot.png" },
+		"TEXTURES/ATLAS/gob/left-hand.png": { "file": "TEXTURES/ATLAS/gob/left-hand.png" },
+		"TEXTURES/ATLAS/gob/left-lower-leg.png": { "file": "TEXTURES/ATLAS/gob/left-lower-leg.png" },
+		"TEXTURES/ATLAS/gob/left-shoulder.png": { "file": "TEXTURES/ATLAS/gob/left-shoulder.png" }, 
+		"TEXTURES/ATLAS/gob/left-upper-leg.png": { "file": "TEXTURES/ATLAS/gob/left-upper-leg.png" },
+		"TEXTURES/ATLAS/gob/neck.png": { "file": "TEXTURES/ATLAS/gob/neck.png" },
+		"TEXTURES/ATLAS/gob/pelvis.png": { "file": "TEXTURES/ATLAS/gob/pelvis.png" },
+		"TEXTURES/ATLAS/gob/right-arm.png": { "file": "TEXTURES/ATLAS/gob/right-arm.png" },
+		"TEXTURES/ATLAS/gob/right-foot.png": { "file": "TEXTURES/ATLAS/gob/right-foot.png" }, 
+		"TEXTURES/ATLAS/gob/right-hand.png": { "file": "TEXTURES/ATLAS/gob/right-hand.png" },
+		"TEXTURES/ATLAS/gob/right-lower-leg.png": { "file": "TEXTURES/ATLAS/gob/right-lower-leg.png" },
+		"TEXTURES/ATLAS/gob/right-shoulder.png": { "file": "TEXTURES/ATLAS/gob/right-shoulder.png" },
+		"TEXTURES/ATLAS/gob/right-upper-leg.png": { "file": "TEXTURES/ATLAS/gob/right-upper-leg.png" },
+		"TEXTURES/ATLAS/gob/torso.png": { "file": "TEXTURES/ATLAS/gob/torso.png" }, 
+		"TEXTURES/ATLAS/gob/undies.png": { "file": "TEXTURES/ATLAS/gob/undies.png" },
+		"TEXTURES/ATLAS/gob/undie-straps.png": { "file": "TEXTURES/ATLAS/gob/undie-straps.png" },
+		"TEXTURES/ATLAS/gob/weapons/shield.png": { "file": "TEXTURES/ATLAS/gob/weapons/shield.png" },
+		"TEXTURES/ATLAS/gob/weapons/spear.png": { "file": "TEXTURES/ATLAS/gob/weapons/spear.png" }
+	}
+}

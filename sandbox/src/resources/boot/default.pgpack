@@ -1,0 +1,5 @@
+{
+	"physics" : ["boot/default"],
+	"audios" : ["boot/default"],
+	"shaders" : ["boot/shaders/sprite", "boot/shaders/primitive", "boot/shaders/particle"]
+}

@@ -1,0 +1,8 @@
+{
+	"setup_frame" : "default",
+	"frames" : {
+		"default" : {
+			"texture" : "TEXTURES/FULL/gradient"
+		}
+	}
+}

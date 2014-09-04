@@ -1,0 +1,18 @@
+#include "common.bt"
+
+struct Bus
+{
+  int32 parent;
+  float volume;
+  float pan;
+};
+
+uint32 roundoff_clipping :0;
+uint32 enable_FFT :1;
+// 30 bit padding
+int32  sample_rate;
+int32  buffer_size;
+int32  num_buses;
+
+uint32 buse_names[num_buses];
+Bus    buses[num_buses];

@@ -1,0 +1,16 @@
+ @import "units/mr_plank/mr_plank#mr_plank"
+ {
+	"sprites" : {
+		"plank" : {
+			"node" : "root",
+			"template" : "units/mr_plank/mr_plank",
+			"order" : 0
+		}
+	},
+	"animations" : {
+		"set" : "units/mr_plank/mr_plank",
+		"bones" : {
+			"root" : "root"
+		}
+	}
+}

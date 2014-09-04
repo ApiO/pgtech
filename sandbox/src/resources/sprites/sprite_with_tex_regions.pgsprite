@@ -1,0 +1,15 @@
+{
+	"setup_frame" : "tileset_region",
+	"frames" : {
+		"atlas_region" : {
+			"width" : 800,
+			"height" : 600,
+			"texture" : "TEXTURES/ATLAS/gob#head"
+		},
+		"tileset_region" : {
+			"width" : 1,
+			"height" : 2,
+			"texture" : "TEXTURES/TILESET/zero[2,3]"
+		} 
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"title" : "Sound compilation options",
+	"type" : "object",
+	"properties" : {
+		"loop" : { "type": "boolean" },
+		"range" : { "type" : "number" },
+		"bus" : { "type": "string" },
+		"single_instance" : { "type" : "boolean" },
+		"file" : {
+			"title" : "Path to the audio file",
+			"type" : "string"
+		},
+		"compression" : {
+			"title" : "Compression type",
+			"enum": [ "PCM", "VORBIS"]
+		}
+	},
+	"required" : ["file", "bus", "range"],
+	"additionalProperties": false
+}

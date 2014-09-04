@@ -1,0 +1,10 @@
+{
+	"setup_frame" : "f0",
+	"frames" : {
+		"f0" : {
+			"width" : 83,
+			"height" : 83,
+			"texture" : "TEXTURES/FULL/bigD"
+		}
+	}
+}

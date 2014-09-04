@@ -1,0 +1,8 @@
+{
+	"file": "sfx/toke_and_exhale.wav",
+	"compression": "PCM",
+	"loop": true,
+	"single_instance": true,
+	"bus": "sfx",
+	"range": 640
+}

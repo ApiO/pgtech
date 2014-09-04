@@ -1,0 +1,900 @@
+{
+	"layers" : [
+		{
+			"name" : "Default",
+			"z" : 0.000000,
+			"visible" : false
+		},{
+			"name" : "haha",
+			"z" : -10.000000,
+			"visible" : true
+		}],
+	"units" : [
+		{
+			"name" : "units/ground",
+			"translation" : [-282.000000, -55.000000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/ground",
+			"translation" : [200.000000, -55.000000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/ground",
+			"translation" : [683.000000, -55.000000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/ground",
+			"translation" : [-760.000000, -55.000000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/myball",
+			"translation" : [-1.272915, 0.636450, 0.000000],
+			"layer" : 1
+		}],
+	"sprites" : [
+		{
+			"name" : "shoukrout",
+			"translation" : [487.729004, 257.046448, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "sprites/gradient_screen",
+			"translation" : [303.182922, 37.348595, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [225.940750, 99.286644, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [222.122040, -11.456155, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [214.484634, -65.554634, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [193.481689, -98.650177, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [170.569382, -108.833427, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [35.004932, -88.466957, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [71.919144, 80.193054, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [94.831451, 87.830475, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [133.655090, 64.918205, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [251.908493, -62.314201, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [254.560120, -62.314198, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [269.144257, 47.730053, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [269.144257, 78.224182, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [269.144287, 80.875908, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [283.728485, 84.853394, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [308.919312, 87.505051, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [315.548553, 87.505043, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [315.548553, 87.505043, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [318.200134, 86.179230, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [338.087646, 33.145863, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [306.267670, 7.954974, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [59.662529, 49.055874, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [78.224152, 143.190063, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [168.380951, 128.605881, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [285.054260, 68.943375, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [250.582626, -43.752525, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [175.010071, -96.785881, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [247.930984, 152.470947, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [302.290100, 151.145035, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [326.155151, -18.561676, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [135.235077, -66.291695, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [133.909164, 23.864992, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [319.526031, 72.920868, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [168.380951, -58.336720, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [189.594208, 3.977487, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [271.795990, -21.213331, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [95.460045, -49.055847, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [151.145050, 38.449177, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [116.673439, 2.651658, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-91.482552, 0.000000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [55.685028, 25.190823, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [222.740097, 31.820032, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-5.303315, 127.280060, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [208.155975, 210.807632, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [338.087677, 116.673439, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-1.325814, -49.055851, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-10.606692, -42.426697, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [55.685024, -88.830894, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [481.277710, 57.010853, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [395.098572, 258.537628, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [408.356750, 295.660980, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [168.380951, 351.346008, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [107.392548, 222.740067, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [262.515137, 51.707531, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [277.099243, -39.775009, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [96.785912, -245.279266, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [201.526733, 22.539160, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [306.267670, 23.864992, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [196.223465, -6.629179, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [194.897614, -5.303349, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [194.897614, -5.303349, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-54.359215, 110.044228, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [64.965904, 157.774261, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [323.503479, 72.920876, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [41.100891, -53.033367, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [57.010910, 59.662510, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [135.235077, 98.111702, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [222.740112, 98.111687, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [155.122574, 49.055878, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [222.740097, 57.010857, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [277.099243, 43.752495, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [307.593536, 83.527580, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [74.246658, -17.235846, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [335.436066, 2.651658, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [274.447632, -133.909225, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [299.638519, -159.100098, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-66.291718, -95.460068, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [147.167572, 108.718391, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [210.807617, 273.121796, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [320.851807, 351.346039, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [352.671814, 124.628403, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [235.998489, -47.730019, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-100.763367, -51.707531, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [87.505035, 238.650116, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [136.560944, 238.650116, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [107.392563, 175.010101, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [116.673431, 145.841736, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [55.685024, 59.662510, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [82.201668, 55.685017, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [181.639206, 46.404224, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [201.526749, 38.449181, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [35.797516, 14.584188, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [144.515945, 35.797516, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [115.347542, 43.752495, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [107.392555, 13.258358, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-30.494202, 0.000000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [66.291656, 63.640064, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [393.772675, 124.628395, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [232.020996, 112.695885, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [127.280060, 177.661789, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [157.774216, 257.211761, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [186.942581, 289.031799, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [347.368530, 363.278503, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [224.065979, 376.536835, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [243.953491, 401.727692, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [249.256744, 420.289398, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [320.851807, 456.086884, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [120.650932, 417.637665, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [155.122559, 414.985992, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [282.402649, 383.166077, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [369.907654, 339.413483, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [339.413513, 152.470963, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [299.638519, 72.920876, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [442.828583, 7.954974, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [411.008545, -80.875870, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [403.053589, -205.504272, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [405.705200, -306.267670, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [336.761810, -408.356903, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [336.761810, -437.525238, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [86.179169, -466.693573, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [153.796707, -420.289398, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [143.190079, -365.930267, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [145.841690, -295.660980, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [160.425949, -273.121826, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [201.526718, -265.166809, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [249.256760, -228.043457, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [9.280879, -196.223450, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [29.168386, -151.145081, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [57.010906, -135.235092, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [131.257584, -111.370049, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [216.110977, -163.077576, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [136.560944, -181.639252, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [90.156662, -163.077576, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [367.256042, -96.785881, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [352.671814, -92.808372, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [232.020996, -279.750977, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [346.042694, -298.312714, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [229.369232, -352.671936, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [263.841003, -393.772675, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [578.063660, -327.481018, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [505.142761, -135.235092, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [428.244324, 164.403427, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [468.019348, 353.997711, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [465.367737, 414.986023, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [413.660187, 458.738617, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [320.851807, 405.705261, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [371.233582, 225.391830, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [290.357635, 220.088440, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [323.503479, 282.402679, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [255.885986, 330.132660, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [255.885986, 330.132660, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [135.235077, 404.379456, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [263.841003, 487.906952, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [189.594208, 495.862000, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-133.909225, 460.064392, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-80.875847, 339.413513, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-76.898346, 336.761841, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [3.977502, 255.885956, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-123.302559, 92.808380, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-46.404213, 7.954974, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-98.111740, -78.224205, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-96.785866, -135.235077, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "fx/fxImpact00/fxImpact00",
+			"translation" : [-27.842514, -262.515137, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [167.055069, 271.795959, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [186.942596, 212.133469, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [230.695084, 27.842546, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [137.886688, -43.752522, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [218.762589, -84.853355, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [14.584133, -189.594284, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [-59.662533, -67.617554, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [14.584132, 161.751740, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [254.560135, 185.616760, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [241.301758, -25.190857, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [277.099243, -167.055115, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [-1.325814, -217.436768, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [-98.111732, -175.010086, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [-37.123329, 13.258358, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [197.549210, 53.033367, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [278.425110, -14.584187, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [368.581818, -175.010086, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [206.830093, -222.740112, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [213.459229, -135.235077, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [315.548553, -119.325058, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [189.594193, -55.685017, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [257.211761, 135.235107, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/dragon/sprites/tail5",
+			"translation" : [690.759399, 409.682739, 0.000000],
+			"layer" : 0
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [-2.670847, 331.182587, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [24.037445, 331.182617, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [194.970367, 319.163910, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [321.834747, 287.113983, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [425.997009, 64.099892, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [-24.037447, -188.293335, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [-36.056168, -190.964172, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [137.547653, -200.312042, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [303.138885, -188.293350, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [425.997009, -312.486786, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [145.560135, -356.555511, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [5.341695, 380.592896, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [13.354177, 404.630341, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [76.118576, 408.636658, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [149.566376, 380.592865, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [-42.150517, 861.110596, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [63.304420, 865.504517, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [463.154297, 782.019409, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [555.427368, 691.943359, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [601.563782, 492.018402, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [575.200195, 276.714478, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [-37.756622, 43.834885, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [69.895332, 555.730774, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [318.153748, 628.231018, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [515.881775, 353.608765, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [487.320953, -123.135422, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [370.881195, -120.938461, -10.000000],
+			"layer" : 1
+		},{
+			"name" : "units/spineboy/sprites/right_arm",
+			"translation" : [322.547668, -114.347534, -10.000000],
+			"layer" : 1
+		}]
+}

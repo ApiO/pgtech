@@ -1,0 +1,121 @@
+ @import "units/spineboy/spineboy#spineboy"
+ {
+	"sprites" : {
+		"left_shoulder" : {
+			"node" : "left_shoulder",
+			"template" : "units/spineboy/sprites/left_shoulder",
+			"order" : 1
+		},
+		"left_arm" : {
+			"node" : "left_arm",
+			"template" : "units/spineboy/sprites/left_arm",
+			"order" : 2
+		},
+		"left_hand" : {
+			"node" : "left_hand",
+			"template" : "units/spineboy/sprites/left_hand",
+			"order" : 3
+		},
+		"left_foot" : {
+			"node" : "left_foot",
+			"template" : "units/spineboy/sprites/left_foot",
+			"order" : 4
+		},
+		"left_lower_leg" : {
+			"node" : "left_lower_leg",
+			"template" : "units/spineboy/sprites/left_lower_leg",
+			"order" : 5
+		},
+		"left_upper_leg" : {
+			"node" : "left_upper_leg",
+			"template" : "units/spineboy/sprites/left_upper_leg",
+			"order" : 6
+		},
+		"pelvis" : {
+			"node" : "pelvis",
+			"template" : "units/spineboy/sprites/pelvis",
+			"order" : 7
+		},
+		"right_foot" : {
+			"node" : "right_foot",
+			"template" : "units/spineboy/sprites/right_foot",
+			"order" : 8
+		},
+		"right_lower_leg" : {
+			"node" : "right_lower_leg",
+			"template" : "units/spineboy/sprites/right_lower_leg",
+			"order" : 9
+		},
+		"right_upper_leg" : {
+			"node" : "right_upper_leg",
+			"template" : "units/spineboy/sprites/right_upper_leg",
+			"order" : 10
+		},
+		"torso" : {
+			"node" : "torso",
+			"template" : "units/spineboy/sprites/torso",
+			"order" : 11
+		},
+		"neck" : {
+			"node" : "neck",
+			"template" : "units/spineboy/sprites/neck",
+			"order" : 12
+		},
+		"head" : {
+			"node" : "head",
+			"template" : "units/spineboy/sprites/head",
+			"order" : 13
+		},
+		"eyes" : {
+			"node" : "head",
+			"template" : "units/spineboy/sprites/eyes",
+			"order" : 14
+		},
+		"right_shoulder" : {
+			"node" : "right_shoulder",
+			"template" : "units/spineboy/sprites/right_shoulder",
+			"order" : 15
+		},
+		"right_arm" : {
+			"node" : "right_arm",
+			"template" : "units/spineboy/sprites/right_arm",
+			"order" : 16
+		},
+		"right_hand" : {
+			"node" : "right_hand",
+			"template" : "units/spineboy/sprites/right_hand",
+			"order" : 17
+		}
+	},
+	"animations" : {
+		"set" : "units/spineboy/spineboy",
+		"bones" : {
+			"hip" : "hip",
+			"left_shoulder" : "left_shoulder",
+			"left_arm" : "left_arm",
+			"left_hand" : "left_hand",
+			"left_foot" : "left_foot",
+			"left_lower_leg" : "left_lower_leg",
+			"left_upper_leg" : "left_upper_leg",
+			"right_foot" : "right_foot",
+			"right_lower_leg" : "right_lower_leg",
+			"right_upper_leg" : "right_upper_leg",
+			"torso" : "torso",
+			"neck" : "neck",
+			"head" : "head",
+			"right_shoulder" : "right_shoulder",
+			"right_arm" : "right_arm",
+			"right_hand" : "right_hand"
+		}
+	},
+	"movers" : {
+		"standing" : {
+			"height" : 200,
+			"radius" : 50,
+			"collision_filter": "mover",
+			"slope_limit": 45,
+			"step_offset": 50,
+			"offset": [0,0]
+		}
+	}
+}

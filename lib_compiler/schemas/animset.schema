@@ -1,0 +1,141 @@
+{
+	"title" : "Animation set",
+	"type" : "object",
+	"properties" : {
+		"tracks" : {
+			"type": "object",
+			"properties": {
+				"bone": {
+					"type": "object",
+					"additionalProperties" : {
+						"properties": {
+							"length": { "type": "number" }
+						}
+					}
+				},
+				"sprite": { 
+					"type": "object",
+					"additionalProperties" : { "type": "array", "items": "string" }
+				},
+				"event": {
+					"type": "object",
+					"additionalProperties" : { "enum": ["TRIGGER", "BEAT"] }
+				}
+			}
+		},
+		"animations": {
+			"type": "object",
+			"additionalProperties" : {
+				"type": "object",
+				"properties": {
+					"bone": {
+						"type": "object",
+						"additionalProperties": {
+						 	"properties": {
+						 		"translation": {
+						 			"type": "array",
+						 			"items": {
+						 				"properties": {
+						 					"time":  { "type": "number" },
+						 					"value": { "type": "array", "items": "number", "minItems": 2, "maxItems": 3 },
+							 				"curve": { 
+							 					"anyOf": [
+													{ "enum": ["LINEAR", "STEPPED"] },
+													{ "type": "array", "items": "number", "minItems": 4, "maxItems": 4 }
+							 					]
+							 				}
+						 				},
+						 				"required": ["time", "value"],
+						 				"additionalProperties": false
+						 			}
+						 		},
+						 		"rotation": {
+						 			"type": "array",
+						 			"items": {
+						 				"properties": {
+						 					"time":  { "type": "number" },
+						 					"value": { "type": "number" },
+							 				"curve": { 
+							 					"anyOf": [
+													{ "enum": ["LINEAR", "STEPPED"] },
+													{ "type": "array", "items": "number", "minItems": 4, "maxItems": 4 }
+							 					]
+							 				}
+						 				},
+						 				"required": ["time", "value"],
+						 				"additionalProperties": false
+						 			}
+					 			},
+					 			"scale": {
+					 				"type": "array",
+						 			"items": {
+						 				"properties": {
+						 					"time":  { "type": "number" },
+						 					"value": { "type": "array", "items": "number", "minItems": 2, "maxItems": 2 },
+							 				"curve": { 
+							 					"anyOf": [
+													{ "enum": ["LINEAR", "STEPPED"] },
+													{ "type": "array", "items": "number", "minItems": 4, "maxItems": 4 }
+							 					]
+							 				}
+						 				},
+						 				"required": ["time", "value"],
+						 				"additionalProperties": false
+						 			}
+					 			}
+							}
+						}
+					},
+					"sprite": {
+						"type": "object",
+						"additionalProperties": {
+							"type": "object",
+							"properties": {
+								"frame": {
+									"type": "array",
+									"items": {
+										"properties": {
+											"time":  { "type": "number" },
+											"value": { "type": "string" }
+										},
+										"required": ["time", "value"]
+									}
+								},
+								"color": {
+									"type": "array",
+									"items": {
+										"properties": {
+											"time":  { "type": "number" },
+											"value": {
+												"type" : "array",
+												"items" : {
+													"type" : "integer",
+													"minimum" : 0,
+													"maximum" : 255
+												},
+												"minItems" : 4,
+												"maxItems" : 4
+											},
+											"curve": { 
+							 					"anyOf": [
+													{ "enum": ["LINEAR", "STEPPED"] },
+													{ "type": "array", "items": "number", "minItems": 4, "maxItems": 4 }
+							 					]
+							 				}
+										},
+										"required": ["time", "value"]
+									}
+								}
+							}
+						}
+					},
+					"event": {
+						"type": "object",
+						"additionalProperties": { "type": "array", "items": "number" }
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties" : false
+}

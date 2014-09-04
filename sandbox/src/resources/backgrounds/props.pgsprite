@@ -1,0 +1,9 @@
+{
+	"setup_frame" : "f0",
+	"frames" : {
+		"f0" : {
+			"texture" : "backgrounds/props",
+			"color": [200, 200, 255, 255]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"title" : "Package description",
+	"type" : "object",
+	"additionalProperties" : {
+		"title": "Type name",
+		"type": "array",
+		"items": {
+			"type": "string",
+			"title": "Resource name"
+		}
+	}
+}

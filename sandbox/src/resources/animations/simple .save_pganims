@@ -1,0 +1,69 @@
+{
+	"tracks": {
+		"bone": {
+			"hip": { "length" : 10.2 },
+			"left_upper_leg": {},
+			"right_upper_leg": {},
+			"torso": {}
+		},
+		"sprite": {
+			"head":  ["eyes_opened", "eyes_closed"],
+			"torso": []
+		},
+		"event": {
+			"foot_down": "BEAT",
+			"sfx_walk" : "TRIGGER"
+		}
+	},
+
+	"animations": {
+		"walk": {
+			"bone": {
+				"hip": {
+					"translation": [
+						{ "time": 0.00, "value": [1.2, 10.0] },
+						{ "time": 0.20, "value": [1.2, 20.0] },
+						{ "time": 0.30, "value": [1.2, 30.0] },
+						{ "time": 0.40, "value": [1.2, 40.0] }
+					],
+					"scale": [
+						{ "time": 0.01, "value": [11.2, 10.0] },
+						{ "time": 0.21, "value": [12.2, 20.0] },
+						{ "time": 0.31, "value": [13.2, 30.0] },
+						{ "time": 0.41, "value": [14.2, 40.0] }
+					]
+				},
+				"torso": {
+					"rotation": [
+						{ "time": 0.02, "value": 1.1 },
+						{ "time": 0.22, "value": 1.2, "curve": "STEPPED" },
+						{ "time": 0.32, "value": 1.3, "curve": [1.0, 1.1, 2.0, 2.1] },
+						{ "time": 0.42, "value": 1.4 }
+					]
+				}
+			},
+			"sprite": {
+				"head": {
+					"frames": [
+						{ "time": 0.6, "value": "eyes_opened" },
+						{ "time": 0.7, "value": "eyes_closed" },
+						{ "time": 0.8, "value": "eyes_opened" },
+						{ "time": 0.9, "value": "eyes_closed" }
+					]
+				},
+				"torso": {
+					"color": [
+						{ "time": 0.04, "value": [101, 111, 121, 255], "curve": "STEPPED" },
+						{ "time": 0.24, "value": [102, 112, 122, 255], "curve": [3.0, 3.1, 4.0, 4.1]},
+						{ "time": 0.34, "value": [103, 113, 123, 255] },
+						{ "time": 0.44, "value": [104, 114, 124, 255] }
+					]
+				}
+			},
+			"event": {
+				"foot_down": [0.111, 0.222, 0.333],
+				"sfx_walk" : [0.111, 0.222, 0.333]
+			}
+		}
+	}
+}

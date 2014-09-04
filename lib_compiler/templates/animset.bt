@@ -1,0 +1,145 @@
+#include "common.bt"
+
+// ---------------------------------------------------------------
+// Track Types
+// ---------------------------------------------------------------
+
+enum TrackType {
+    TRACK_TYPE_BONE = 0,
+    TRACK_TYPE_SPRITE,
+    TRACK_TYPE_EVENT
+};
+
+struct BoneTrack {
+    uint32 name;
+    float bone_length;
+};
+
+struct SpriteTrack {
+    uint32 name;
+};
+
+struct EventTrack {
+    uint32 name;
+    enum <uint32> {
+            BEAT = 0,
+		    TRIGGER
+	    } type;
+};
+
+TrackType get_track_type(uint16 num_bone_tracks, uint16 num_sprite_tracks, uint16 track_index)
+{
+    if(track_index < num_bone_tracks) {
+        return TRACK_TYPE_BONE;
+    } else if(track_index < num_bone_tracks + num_sprite_tracks) {
+        return TRACK_TYPE_SPRITE;
+    } else {
+        return TRACK_TYPE_EVENT;
+    }
+}
+
+// ---------------------------------------------------------------
+// Animation Types
+// ---------------------------------------------------------------
+
+enum CurveType {
+    CURVE_TYPE_LINEAR = 0,
+    CURVE_TYPE_STEPPED = 1,
+    CURVE_TYPE_BIEZER = 2
+};
+
+struct BiezerCurve {
+    float cx1, cy1, cx2, cy2;
+};
+
+struct Keyframe {
+	float  time;
+	uint16 track_index;
+
+    switch (get_track_type(num_bone_tracks, num_sprite_tracks, track_index)) {
+	    case TRACK_TYPE_BONE :
+        {
+            enum <uchar> {
+                TRANSLATION = 0,
+                ROTATION,
+                SCALE
+            } channel : 4;
+            uchar curve_type : 4;
+    
+		    switch (channel) 
+		    {
+			case TRANSLATION : float translation[2]; break;
+			case ROTATION :    float rotation; break;
+			case SCALE :	   float scale[2]; break;
+		    }
+            if (curve_type == CURVE_TYPE_BIEZER)
+                BiezerCurve biezer_curve;
+		    break;
+        }
+	    case TRACK_TYPE_SPRITE :
+        {
+            enum <uint16> {
+                FRAME = 3,
+                COLOR
+            } channel : 4;
+
+            switch(channel) 
+    	    {
+    		case FRAME :
+    			uint16 frame_index : 10;
+    			break;
+    		case COLOR:
+                uint16 curve_type : 10;
+    			uchar  color[4];
+    			if (curve_type == CURVE_TYPE_BIEZER)
+                    BiezerCurve biezer_curve;
+                break;
+    	    }
+    	    break;
+        }
+	    case TRACK_TYPE_EVENT :
+		    break;
+    }
+};
+
+struct AnimationHeader {
+	uint32 name;
+	uint32 data_offset;
+};
+
+struct AnimationData {
+    float  duration;
+    uint32 num_translation_keys[num_bone_tracks];
+    uint32 num_rotation_keys   [num_bone_tracks];
+    uint32 num_scale_keys      [num_bone_tracks];
+    uint32 num_frame_keys      [num_sprite_tracks];
+    uint32 num_color_keys      [num_sprite_tracks];
+    uint32 num_event_keys      [num_event_tracks];
+
+    local int i;
+    local int total_keys = 0;
+    for (i = 0; i < num_bone_tracks; i++)
+        total_keys += num_translation_keys[i] + num_rotation_keys[i] + num_scale_keys[i];
+    for (i = 0; i < num_sprite_tracks; i++)
+        total_keys += num_frame_keys[i] + num_color_keys[i];
+    for (i = 0; i < num_event_tracks; i++)
+        total_keys += num_event_keys[i];
+
+    Keyframe stream[total_keys] <optimize = false>;
+};
+
+uint16 num_bone_tracks;
+uint16 num_sprite_tracks;
+uint16 num_event_tracks;
+uint16 num_animations;
+
+BoneTrack bone_tracks[num_bone_tracks];
+SpriteTrack sprite_tracks[num_sprite_tracks];
+EventTrack event_tracks[num_event_tracks];
+
+// ---------------------------------------------------------------
+// Animation Declarations
+// ---------------------------------------------------------------
+
+AnimationHeader animation_headers[num_animations];
+AnimationData   animation_data[num_animations] <optimize = false>;

@@ -1,0 +1,18 @@
+{
+	"nodes" : {
+		"root" : {}
+	},
+	"sprites" : {
+		"groud" : {
+			"node" : "root",
+			"template" : "sprites/ground",
+			"order" : 0
+		}
+	},
+	"actors" : {
+		"groud" : {
+			"node" : "root",
+			"actor" : "physics/ground"
+		}
+	}
+}

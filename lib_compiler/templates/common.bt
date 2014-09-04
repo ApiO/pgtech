@@ -1,0 +1,6 @@
+struct Pose
+{
+	float tx, ty, tz;
+	float rx, ry, rz;
+	float sx, sy;
+};

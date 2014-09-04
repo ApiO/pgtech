@@ -1,0 +1,76 @@
+#include "common.bt"
+
+struct Node
+{
+    uint32 name; // hash 32 du nom du noeud
+    int32  parent;	  // index du noeud parent (forcément placé avant)
+	Pose   pose;	  // tx, ty, r, sx et sy
+};
+
+struct Mover
+{
+    uint32 name;
+    float  height;
+    float  radius;
+    float  slope_limit;
+    float  step_offset;
+    float  offset[2]; // [x,y]
+    uint32 collision_filter;
+};
+
+struct Actor
+{
+    uint32 name;
+    uint32 template;
+    uint32 node;
+    Pose   pose;
+};
+
+struct Sprite
+{
+    uint32 node;
+    uint32 name;
+    uint32 template;
+    Pose   pose;
+    uint32 order;
+	uchar  color[4];
+};
+
+struct BoneTrack
+{
+    uint32 node_name;
+    uint32 track_name;
+};
+
+struct SpriteTrack
+{
+    uint32 sprite_name;
+    uint32 track_name;
+    uint32 frame_offset;
+};
+
+//---------------------------------------------------
+//      Description
+//---------------------------------------------------
+
+uint32 num_nodes;
+uint32 num_actors;
+uint32 num_sprites;
+uint32 num_movers;
+uint16 num_bone_tracks;
+uint16 num_sprite_tracks;
+uint32 animation_set;
+uint32 actor_offset;
+uint32 sprite_offset;
+uint32 bone_track_offset;
+uint32 sprite_track_offset;
+
+Node nodes[num_nodes];
+
+if (num_actors)        Actor       actors[num_actors];
+if (num_sprites)       Sprite      sprites[num_sprites];
+if (num_movers)        Mover       movers[num_movers];
+if (num_bone_tracks)   BoneTrack   bone_tracks[num_bone_tracks];
+if (num_sprite_tracks) SpriteTrack sprite_tracks[num_sprite_tracks];
+
+// sprite track frames (u16*)

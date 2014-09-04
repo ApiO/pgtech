@@ -1,0 +1,51 @@
+enum<uint16> TextureType
+{
+  TEXTURE_TYPE_FULL = 0,
+  TEXTURE_TYPE_TILESET,
+  TEXTURE_TYPE_ATLAS,
+};
+
+struct Region
+{
+    uint32 name;
+
+    uint16 page;
+    uint16 rotated;
+
+    int32  x, y;
+    int32  width, height;
+    int32  margin[4];
+};
+
+struct Page
+{ 
+    int32  width;
+    int32  height;
+
+    uint32 data_offset;
+    uint32 data_size;
+};
+
+//---------------------------------------------------
+//      Description
+//---------------------------------------------------
+
+TextureType type; // 16 bits
+uint16 num_regions;
+uint16 num_empty_regions;
+uint16 num_pages;
+
+Region regions[num_regions];
+
+if (num_empty_regions)
+    uint32 empty_regions[num_empty_regions];
+
+local uint16 i;
+local uint32 total_data_size = 0;
+
+for(i = 0; i < num_pages; i++) {
+    Page pages;
+    total_data_size += pages[i].data_size;
+}
+
+uchar data[total_data_size];

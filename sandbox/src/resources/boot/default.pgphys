@@ -1,0 +1,55 @@
+{
+	"ppm": 100,
+	"materials" : {
+		"bouncer" : {
+			"density" : 1,
+			"friction" : 0.7,
+			"restitution" : 0.8
+		},
+		"solid" : {
+			"density" : 1,
+			"friction" : 1,
+			"restitution" : 0
+		}
+	},
+	"actors" : {
+		"full_physics" : {
+			"dynamic" : true,
+			"kinematic" : false,
+			"disable_gravity" : false
+		},
+		"default_static" : {
+			"dynamic" : false,
+			"kinematic" : false,
+			"disable_gravity" : true
+		}
+	},
+	"collision_types" : ["default", "trigger", "ground"],
+	"collision_filters" : {
+		"default" : {
+			"is" : ["default"],
+			"collides_with" : ["default", "trigger", "ground"]
+		},
+		"trigger" : {
+			"is" : ["trigger"],
+			"collides_with" : ["default"]
+		},
+		"ground" : {
+			"is" : ["ground"],
+			"collides_with": ["default"]
+		},
+		"mover" : {
+			"is" : ["default"],
+			"collides_with" : ["ground"]
+		}
+	},
+	"shapes" : {
+		"default" : {
+			"collision_filter" : "default"
+		},
+		"trigger" : {
+			"trigger" : true,
+			"collision_filter" : "trigger"
+		}
+	}
+}

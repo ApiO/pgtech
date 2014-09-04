@@ -1,0 +1,42 @@
+{
+	"units" : [
+		{
+			"name" : "units/ground",
+			"translation" : [-410.515, 138.172, 0.000]
+		},		{
+			"name" : "units/ground",
+			"translation" : [-891.059, 81.971, 0.000]
+		},		{
+			"name" : "units/mr_plank/mr_plank",
+			"translation" : [333.183, 168.098, 0.000]
+		},		{
+			"name" : "units/spineboy/spineboy_mover",
+			"translation" : [-441.904, 195.807, 0.000]
+		},		{
+			"name" : "units/ground",
+			"translation" : [899.573, 484.009, 0.000]
+		},		{
+			"name" : "levels/culling_test/triangle/triangle",
+			"translation" : [802.295, -188.078, 0.000]
+		},		{
+			"name" : "levels/culling_test/platform/platform",
+			"translation" : [-879.444, -213.910, 0.000]
+		},		{
+			"name" : "levels/culling_test/platform/platform",
+			"translation" : [719.378, -214.141, 0.000]
+		},		{
+			"name" : "levels/culling_test/platform/platform",
+			"translation" : [-80.052, -213.961, 0.000]
+		},		{
+			"name" : "units/myball",
+			"translation" : [-157.233, 350.340, 0.000]
+		}	],
+	"sprites" : [
+		{
+			"name" : "sprites/gradient_screen",
+			"translation" : [563.869, 866.250, 0.000]
+		},		{
+			"name" : "sprites/mr_patate",
+			"translation" : [744.100, -119.607, 0.000]
+		}	]
+}

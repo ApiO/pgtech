@@ -1,0 +1,10 @@
+{
+	"template" : "default_static",
+	"shapes" : {
+		"tsouintsouin" : {
+			"template" : "default",
+			"material" : "solid",
+			"shape" : "physics/ground"
+		}
+	}
+}

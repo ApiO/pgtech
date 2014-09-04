@@ -1,0 +1,4 @@
+{
+	"vertex" : "boot/shaders/sprite_vs.glsl",
+	"fragment" : "boot/shaders/sprite_fs.glsl"
+}

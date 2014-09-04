@@ -1,0 +1,44 @@
+{
+"bones": [
+	{ "name": "root" },
+	{ "name": "torso", "parent": "root", "y": 150.9 },
+	{ "name": "head", "parent": "torso", "y": 122.06 },
+	{ "name": "left_arm", "parent": "torso", "x": -43.4 },
+	{ "name": "left_foot", "parent": "torso", "x": -55.35, "y": -93.72, "rotation": -40.52 },
+	{ "name": "right_arm", "parent": "torso", "x": 76.73, "y": -5.03, "rotation": 58.23 },
+	{ "name": "right_foot", "parent": "torso", "x": 53.46, "y": -93.34, "rotation": 40.44 }
+],
+"slots": [
+	{ "name": "torso", "bone": "torso", "attachment": "mr_patate_block" },
+	{ "name": "head", "bone": "head", "attachment": "patate" },
+	{ "name": "left_arm", "bone": "left_arm", "attachment": "mr_patate_block" },
+	{ "name": "left_foot", "bone": "left_foot", "attachment": "mr_patate_block" },
+	{ "name": "right_arm", "bone": "right_arm", "attachment": "mr_patate_block" },
+	{ "name": "right_foot", "bone": "right_foot", "attachment": "mr_patate_block" }
+],
+"skins": {
+	"default": {
+		"head": {
+			"patate": { "width": 128, "height": 128 }
+		},
+		"left_arm": {
+			"mr_patate_block": { "x": -38.36, "rotation": -64.39, "width": 38, "height": 116 }
+		},
+		"left_foot": {
+			"mr_patate_block": { "width": 38, "height": 116 }
+		},
+		"right_arm": {
+			"mr_patate_block": { "width": 38, "height": 116 }
+		},
+		"right_foot": {
+			"mr_patate_block": { "width": 38, "height": 116 }
+		},
+		"torso": {
+			"mr_patate_block": { "x": -1.68, "y": -0.42, "width": 38, "height": 116 }
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

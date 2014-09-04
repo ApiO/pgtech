@@ -1,0 +1,6 @@
+{
+	"file": "sfx/shell_fall.wav",
+	"compression": "PCM",
+	"bus": "sfx",
+	"range": 640
+}

@@ -1,0 +1,28 @@
+{
+	"type" : "ATLAS",
+	"regions" : {
+		"units/spineboy/textures/eyes.png": { "file": "units/spineboy/textures/eyes.png" },
+		"units/spineboy/textures/eyes-closed.png": { "file": "units/spineboy/textures/eyes-closed.png" },
+		"units/spineboy/textures/head.png": { "file": "units/spineboy/textures/head.png" },
+		"units/spineboy/textures/left-ankle.png": { "file": "units/spineboy/textures/left-ankle.png" },
+		"units/spineboy/textures/left-arm.png": { "file": "units/spineboy/textures/left-arm.png" },
+		"units/spineboy/textures/left-foot.png": { "file": "units/spineboy/textures/left-foot.png" },
+		"units/spineboy/textures/left-hand.png": { "file": "units/spineboy/textures/left-hand.png" },
+		"units/spineboy/textures/left-lower-leg.png": { "file": "units/spineboy/textures/left-lower-leg.png" },
+		"units/spineboy/textures/left-pant-bottom.png": { "file": "units/spineboy/textures/left-pant-bottom.png" },
+		"units/spineboy/textures/left-shoulder.png": { "file": "units/spineboy/textures/left-shoulder.png" },
+		"units/spineboy/textures/left-upper-leg.png": { "file": "units/spineboy/textures/left-upper-leg.png" },
+		"units/spineboy/textures/neck.png": { "file": "units/spineboy/textures/neck.png" },
+		"units/spineboy/textures/pelvis.png": { "file": "units/spineboy/textures/pelvis.png" },
+		"units/spineboy/textures/right-ankle.png": { "file": "units/spineboy/textures/right-ankle.png" },
+		"units/spineboy/textures/right-arm.png": { "file": "units/spineboy/textures/right-arm.png" },
+		"units/spineboy/textures/right-foot.png": { "file": "units/spineboy/textures/right-foot.png" },
+		"units/spineboy/textures/right-foot-idle.png": { "file": "units/spineboy/textures/right-foot-idle.png" },
+		"units/spineboy/textures/right-hand.png": { "file": "units/spineboy/textures/right-hand.png" },
+		"units/spineboy/textures/right-lower-leg.png": { "file": "units/spineboy/textures/right-lower-leg.png" },
+		"units/spineboy/textures/right-pant-bottom.png": { "file": "units/spineboy/textures/right-pant-bottom.png" },
+		"units/spineboy/textures/right-shoulder.png": { "file": "units/spineboy/textures/right-shoulder.png" },
+		"units/spineboy/textures/right-upper-leg.png": { "file": "units/spineboy/textures/right-upper-leg.png" },
+		"units/spineboy/textures/torso.png": { "file": "units/spineboy/textures/torso.png" }
+	}
+}

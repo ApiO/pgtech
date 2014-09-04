@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tool Center</title>
+  <link rel="stylesheet" href="../common/assets/css/styles.css">
+  <script src="../common/assets/js/head.load.min.js"></script>
+
+  <script>
+      //Devtools for developers
+      window.addEventListener('keydown', function (e) {
+          if (e.keyIdentifier === 'F12') {
+              require('nw.gui').Window.get().showDevTools();
+          }
+          switch(e.keyIdentifier) { 
+            case 'F12':
+              require('nw.gui').Window.get().showDevTools();
+              break; 
+            case 'F5':
+              require('nw.gui').Window.get().reload();
+              break; 
+          }
+      });
+  </script>
+</head>
+<body ng-cloak>
+  <div class="sidebar">
+    <ul class="nav nav-list" ng-init="projects = [{name:'Pizza Mustache', path:'path/to/pizza_mustache'}, {name:'Steam Junk', path:'path/to/steam_junk'}]">
+      <li ng-repeat="project in projects">
+        <a tooltip="{{project.path}}"
+           tooltip-placement="right" 
+           tooltip-popup-delay="500"
+           href="#/{{project.name}}/">{{project.name}}</a></li>
+      <li>
+        <a href="#">Nested</a>
+        <ul class="nav">
+          <li class="active">
+            <a href="#">Nested2</a>
+            <ul class="nav">
+              <li ng-repeat="project in projects">
+              <a tooltip="{{project.path}}"
+                tooltip-placement="right" 
+                tooltip-popup-delay="500"
+                href="#/{{project.name}}/">{{project.name}}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <titlebar></titlebar>
+    <section class="content">
+    </section>
+  </div>
+
+  <script>
+    head.js(
+      "../common/assets/js/jquery-2.0.3.min.js", 
+      "../common/assets/js/bootstrap.min.js",
+      "../common/assets/js/angular.min.js", 
+      "../common/assets/js/ui-bootstrap.min.js",
+      "../common/directives/titlebar.js",
+      function() {
+        angular.bootstrap(document, ['ui.bootstrap', 'common.titlebar']);
+      }
+    );
+  </script>
+</body>
+</html>

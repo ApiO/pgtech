@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED090941-3F1A-40D5-B4FD-292E0E05733C}</ProjectGuid>
+    <RootNamespace>level_editor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir>build\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir>build\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;../third_party/sqlite;../lib_engine/include;../lib_runtime/include;../lib_data/include;../third_party/glm;../third_party/imgui;../third_party/glew;../third_party/mintomic</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLM_FORCE_RADIANS;GLEW_STATIC;_MBCS;_CRT_SECURE_NO_WARNINGS;_ALLOW_KEYWORD_MACROS;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libraries\$(Configuration);..\libraries\common</AdditionalLibraryDirectories>
+      <AdditionalDependencies>imgui.lib;soil.lib;Box2D.lib;opengl32.lib;glew32sd.lib;glfw3.lib;sqlited.lib;soloud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;../third_party/sqlite;../lib_engine/include;../lib_runtime/include;../lib_data/include;../third_party/glm;../third_party/imgui;../third_party/glew;../third_party/mintomic</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLM_FORCE_RADIANS;GLEW_STATIC;_MBCS;_CRT_SECURE_NO_WARNINGS;_ALLOW_KEYWORD_MACROS;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\libraries\$(Configuration);..\libraries\common</AdditionalLibraryDirectories>
+      <AdditionalDependencies>imgui.lib;soil.lib;angelscript.lib;Box2D.lib;glew32s.lib;glfw3.lib;sqlite.lib;squish.lib;opengl32.lib;soloud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+      <TreatOutputAsContent>
+      </TreatOutputAsContent>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lib_data\lib_data.vcxproj">
+      <Project>{bd217a9e-89f2-490b-b63f-4ff9d228c560}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib_engine\lib_engine.vcxproj">
+      <Project>{434d64a8-c77f-4d77-a8c2-ada6330a027a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lib_runtime\lib_runtime.vcxproj">
+      <Project>{5289b83c-447a-4822-8644-311f1f87cb04}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bases\focusable.cpp" />
+    <ClCompile Include="src\controls\input_control.cpp" />
+    <ClCompile Include="src\forms\layer_form.cpp" />
+    <ClCompile Include="src\forms\level_creation_form.cpp" />
+    <ClCompile Include="src\forms\menu_form.cpp" />
+    <ClCompile Include="src\forms\property_form.cpp" />
+    <ClCompile Include="src\handlers\action_handler.cpp" />
+    <ClCompile Include="src\handlers\resource_handler.cpp" />
+    <ClCompile Include="src\handlers\project_handler.cpp" />
+    <ClCompile Include="src\handlers\level_handler.cpp" />
+    <ClCompile Include="src\handlers\selection_handler.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\utils\camera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\bases\focusable.h" />
+    <ClInclude Include="src\controls\input_control.h" />
+    <ClInclude Include="src\bases\form.h" />
+    <ClInclude Include="src\crash_handler.h" />
+    <ClInclude Include="src\forms\forms.h" />
+    <ClInclude Include="src\handlers\action_handler.h" />
+    <ClInclude Include="src\application_types.h" />
+    <ClInclude Include="src\handlers\level_handler.h" />
+    <ClInclude Include="src\handlers\project_handler.h" />
+    <ClInclude Include="src\handlers\resource_handler.h" />
+    <ClInclude Include="src\handlers\selection_handler.h" />
+    <ClInclude Include="src\mint_types.h" />
+    <ClInclude Include="src\utils\camera.h" />
+    <ClInclude Include="src\controls\list_control.h" />
+    <ClInclude Include="src\utils\camera_control.h" />
+    <ClInclude Include="src\utils\fps.h" />
+    <ClInclude Include="src\utils\timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\DroidSans.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

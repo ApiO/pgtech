@@ -1,0 +1,9 @@
+{
+	"type" : "ATLAS",	
+	"regions" : {
+		"step_3" : { "file" : "TEXTURES/ATLAS/zero_spawn.png", "position" : [0,0],   "size" : [37,43] },
+		"step_2" : { "file" : "TEXTURES/ATLAS/zero_spawn.png", "position" : [78,21], "size" : [37,47] },
+		"step_0" : { "file" : "TEXTURES/ATLAS/zero_spawn.png", "position" : [61,24], "size" : [8,48]  },
+		"step_1" : { "file" : "TEXTURES/ATLAS/zero_spawn.png", "position" : [22,65], "size" : [24,30] }
+	}
+}

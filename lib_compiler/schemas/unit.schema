@@ -1,0 +1,111 @@
+{
+	"title" : "Unit description",
+	"type"  : "object",
+	"properties" : {
+		"$import" : {
+			"title" : "pgi's file path to merge with",
+			"type"  : "string"
+		},
+		"nodes" : {
+			"title" : "Nodes list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Nodes description",
+				"type"  : "object",
+				"properties" : {
+					"parent"      : { "type" : "string" },
+					"translation" : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 3 },
+					"rotation"    : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 3, "maxItems" : 3 },
+					"scale"       : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 2 },
+					"shear"       : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 2 },
+					"order"       : { "type" : "integer", "minmum" : 0 }
+				},
+				"additionalProperties" : false
+			}
+		},
+		"sprites" : {
+			"title" : "Sprites list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Sprite description",
+				"type"  : "object",
+				"properties" : {
+					"node"        : { "type" : "string" },
+					"template"    : { "type" : "string" },
+					"shader"      : { "type" : "string" },
+					"color"       : { "type" : "array", "items" : { "type" : "integer" }, "minItems" : 4, "maxItems" : 4, "minimum" : 0, "maximum" : 255 },
+					"translation" : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 3 },
+					"rotation"    : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 3, "maxItems" : 3 },
+					"scale"       : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 2 }
+				},
+				"required" : ["node", "template"]
+			}
+		},
+		"actors" : {
+			"title" : "Actors list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Actors description",
+				"type"  : "object",
+				"properties" : {
+					"node"        : { "type" : "string" },
+					"actor"       : { "type" : "string" },
+					"translation" : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 3 },
+					"rotation"    : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 3, "maxItems" : 3 },
+					"scale"       : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 2 }
+				}
+			}
+		},
+		"animations" : {
+			"title" : "Animations list",
+			"type"  : "object",
+			"properties" : {
+				"set"   : { "type" : "string" },
+				"bones" : {
+					"type" : "object",
+					"additionalProperties" : {
+						"title" : "Node name",
+						"type"  : "string"
+					}
+				},
+				"sprites" : {
+					"type" : "object",
+					"additionalProperties" : {
+						"title" : "Node name",
+						"type"  : "object",
+						"properties" : {
+							"track"  : { "type" : "string" },
+							"frames" : {
+								"type" : "object",
+								"additionalProperties" : {
+									"title" : "frame name",
+									"type"  : "string"
+								}
+							}
+						},
+						"required" : ["track"]
+					}
+				}
+			}
+		},
+		"movers" : {
+			"title" : "Mover list",
+			"type"  : "object",
+			"additionalProperties" : {
+				"title" : "Mover description",
+				"type"  : "object",
+				"properties" : {
+					"height"           : { "type" : "number" },
+					"radius"           : { "type" : "number" },
+					"slope_limit"      : { "type" : "number" },
+					"step_offset"      : { "type" : "number" },
+					"offset"           : { "type" : "array", "items" : { "type" : "number" }, "minItems" : 2, "maxItems" : 2 },
+					"collision_filter" : { "type": "string" }
+				},
+				"required": ["height", "radius", "slope_limit", "step_offset"]
+			}
+		}
+	},
+	"required" : ["nodes"],
+	"additionalProperties" : false
+}

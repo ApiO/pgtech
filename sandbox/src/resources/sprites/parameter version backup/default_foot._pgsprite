@@ -1,0 +1,15 @@
+{
+	"parameters" : {
+		"@0" : {
+			"type" : "F32",
+			"default" : 42.0
+		}
+	},
+	"setup_frame" : "f0",
+	"frames" : {
+		"f0" : {
+			"width" : 83,
+			"height" : 83
+		},
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"boot" : {
+		"package" : "boot/default",
+		"physics" : "boot/default",
+		"audio" : "boot/default",
+		"sprite_program" : "boot/shaders/sprite",
+		"primitive_program" : "boot/shaders/primitive",
+		"particle_program" : "boot/shaders/particle"
+	},
+	"window" : {
+		"title" : "Yohohohohohoooooooo !",
+		"resolution" : [1600, 900],
+		"resizable" : false,
+		"mode" : "WINDOW"
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"title" : "Audio configuration",
+	"type" : "object",
+	"properties" : {
+		"roundoff_clipping" : { "type": "boolean" },
+		"enable_vizualisation" : { "type": "boolean" },
+		"sampling_rate": { "enum": [8000, 22050, 44100, 48000] },
+		"buffer_size": { "type": "integer" },
+		"buses" : {
+			"title" : "Buses list",
+			"type" : "object",
+			"additionalProperties" : {
+				"title" : "Bus description",
+				"type" : "object",
+				"properties" : {
+					"parent" : { "type" : "string" },
+					"volume" : { "type" : "number" },
+					"pan"    : { "type" : "number" }
+				},
+				"additionalProperties" : false
+			}
+		}
+	},
+	"required": ["buses"],
+	"additionalProperties" : false
+}

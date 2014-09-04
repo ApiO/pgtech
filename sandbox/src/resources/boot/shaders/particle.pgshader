@@ -1,0 +1,4 @@
+{
+	"vertex"   : "boot/shaders/particle_vs.glsl",
+	"fragment" : "boot/shaders/particle_fs.glsl"
+}

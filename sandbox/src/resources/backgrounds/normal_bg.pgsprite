@@ -1,0 +1,9 @@
+{
+	"setup_frame" : "f0",
+	"frames" : {
+		"f0" : {
+			"texture" : "backgrounds/normal_bg",
+			"color": [200, 255, 200, 255]
+		}
+	}
+}

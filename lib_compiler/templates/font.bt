@@ -1,0 +1,33 @@
+struct Char
+{
+    int32  id;
+    int16  x;
+    int16  y;
+    int16  width;
+    int16  height;
+    int16  offset_x;
+    int16  offset_y;
+    int16  x_advance;
+    uint16 page;
+    float  tex_coord[8];
+};
+
+
+struct Page
+{
+  uint32 size;
+  uint32 offset;   
+};
+
+//---------------------------------------------------
+//      Description
+//---------------------------------------------------
+
+int32  _line_height;
+uint32 _num_chars;
+uint32 _num_pages;
+uint32 _chars_offset;
+uint32 _pages_offset;
+
+Char chars[_num_chars];
+Page pages[_num_pages];

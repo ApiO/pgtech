@@ -1,0 +1,5 @@
+{
+	"type" : "TILESET",
+	"file" : "TEXTURES/TILESET/zero.png",
+	"tile_size" : [83, 83]
+}

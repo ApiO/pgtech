@@ -1,0 +1,13 @@
+#include "common.bt"
+
+uint32 flags;
+uint32 bus;
+float  range; // will be replaced by an attenuation curve
+
+uint32 sampling_rate;
+uint32 bit_depth;
+uint32 num_channels;
+uint32 num_samples;
+uint32 num_stream_samples;
+
+// data

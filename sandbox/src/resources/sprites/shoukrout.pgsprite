@@ -1,0 +1,28 @@
+{
+	"setup_frame" : "f0",
+	"frames" : {
+		"f0" : {
+			"width" : 800,
+			"height" : 600,
+			"texture" : "TEXTURES/FULL/bigD"
+		},
+		"f1" : {
+			"width" : 1,
+			"height" : 1,
+			"texture" : "TEXTURES/FULL/bigD"
+		},
+		"f40-12" : {
+			"width" : 8,
+			"height" : 8,
+			"texture" : "TEXTURES/FULL/bigD"
+		},
+		"f1000" : {
+			"width" : 1000,
+			"height" : 1000,
+			"texture" : "TEXTURES/FULL/bigD"
+		}
+	},
+	"sequence" : ["f0", "f1", "f40-12", "f1000"],
+	"fps" : 12,
+	"mode" : "RANDOM"
+}

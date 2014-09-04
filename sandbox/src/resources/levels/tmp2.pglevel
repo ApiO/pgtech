@@ -1,0 +1,30 @@
+{
+	"units" : [
+		{
+			"name" : "units/mr_patate",
+			"translation" : [-32.928, -178.633, 0.000]
+		},		{
+			"name" : "levels/culling_test/ground/ground",
+			"translation" : [309.952, 115.834, 0.000]
+		},		{
+			"name" : "units/dragon/dragon",
+			"translation" : [893.049, -647.108, 0.000]
+		},		{
+			"name" : "units/ground",
+			"translation" : [721.697, 463.660, 0.000]
+		},		{
+			"name" : "levels/culling_test/platform/platform",
+			"translation" : [1600.880, 367.549, 0.000]
+		},		{
+			"name" : "units/myball",
+			"translation" : [173.595, 478.146, 0.000]
+		}	],
+	"sprites" : [
+		{
+			"name" : "units/spineboy/sprites/right_lower_leg",
+			"translation" : [237.397, -124.745, 0.000]
+		},		{
+			"name" : "sprites/gradient_screen",
+			"translation" : [1027.569, -289.056, 0.000]
+		}	]
+}
