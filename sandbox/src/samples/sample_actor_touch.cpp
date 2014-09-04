@@ -18,27 +18,27 @@ namespace
 
   u64 circle, box;
 
-  void touch_callback(const Array<ContactPoint> &contacts)
+  void touch_callback(const Array<ContactPoint> &contacts, const void * user_data)
   {
     ASSERT(array::size(contacts) == 1);
 
     char buf[512] = "\0";
     char tmp[64];
 
-    sprintf(tmp, "TOUCHED: %llu", contacts[0].actor);
+    sprintf(tmp, "TOUCHED: %llu - user_data: %d", contacts[0].actor, *(i32*)user_data);
     strcat(buf, tmp);
 
     text::set_string(app::global_gui_world, touch_log, buf);
   }
 
-  void untouch_callback(const Array<ContactPoint> &contacts)
+  void untouch_callback(const Array<ContactPoint> &contacts, const void * user_data)
   {
     ASSERT(array::size(contacts) == 1);
 
     char buf[512] = "\0";
     char tmp[64];
 
-    sprintf(tmp, "UNTOUCHED: %llu", contacts[0].actor);
+    sprintf(tmp, "UNTOUCHED: %llu - user_data: %d", contacts[0].actor, *(i32*)user_data);
     strcat(buf, tmp);
 
     text::set_string(app::global_gui_world, touch_log, buf);
@@ -52,9 +52,14 @@ namespace app
 
   namespace sample_actor_touch
   {
+    i32 user_data1, user_data2;
+
+
     void init()
     {
-      //global_debug_physic = true;
+      global_debug_physic = true;
+      user_data1 = 42;
+      user_data2 = 24;
       
       w2 = global_screen.w2;
       h2 = global_screen.h2;
@@ -68,8 +73,8 @@ namespace app
                                    false, false, false, false,
                                    "default", "solid", t, q);
 
-      actor::set_touched_callback(global_game_world, box, touch_callback);
-      actor::set_untouched_callback(global_game_world, box, untouch_callback);
+      actor::set_touched_callback(global_game_world, box, touch_callback, &user_data1);
+      actor::set_untouched_callback(global_game_world, box, untouch_callback, &user_data2);
 
       touch_log = world::spawn_text(global_gui_world, global_font_name, "-LOG-", TEXT_ALIGN_LEFT, glm::vec3(-w2 + 10, h2 - 10, 0.f), glm::quat(IDENTITY_ROTATION));
 

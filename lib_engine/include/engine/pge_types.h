@@ -22,7 +22,7 @@ namespace pge
   typedef void(*RenderShutdown) (void);
 
   typedef void(*WindowResizeFun) (i32 width, i32 height);
-  
+
   
   struct ContactPoint {
     glm::vec3 position;
@@ -38,6 +38,7 @@ namespace pge
 
   typedef void(*RaycastCallback) (const Array<ContactPoint> &hits);
   typedef void(*OverlapCallback) (const Array<ContactPoint> &hits);
+  typedef void(*ContactCallback) (const Array<ContactPoint> &contacts, const void * user_data);
 
   extern const u32 MAX_NUM_PADS;
   extern const u32 MOUSE_NUM_BUTTONS;

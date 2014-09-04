@@ -511,7 +511,7 @@ namespace pge
       physics::set_velocity(a.body, glm::vec2(v.x, v.y));
     }
 
-    void set_touched_callback(PhysicsWorld &w, u64 actor, void(*callback)(const Array<ContactPoint> &contacts))
+    void set_touched_callback(PhysicsWorld &w, u64 actor, ContactCallback callback, const void *user_data)
     {
       Allocator &a = *w.actors._data._allocator;
       ActorListener l ={ 0 };
@@ -522,12 +522,12 @@ namespace pge
         l.contacts      = MAKE_NEW(a, Array<ContactPoint>, a);
         l.prev_contacts = MAKE_NEW(a, Hash<ActorListener::PrevContact>, a);
       }
-
+      l.touched_user_data = user_data;
       l.touched_callback = callback;
       hash::set(w.listeners, actor, l);
     }
 
-    void set_untouched_callback(PhysicsWorld &w, u64 actor, void(*callback)(const Array<ContactPoint> &contacts))
+    void set_untouched_callback(PhysicsWorld &w, u64 actor, ContactCallback callback, const void *user_data)
     {
       Allocator &a = *w.actors._data._allocator;
       ActorListener l ={ 0 };
@@ -538,7 +538,7 @@ namespace pge
         l.contacts      = MAKE_NEW(a, Array<ContactPoint>, a);
         l.prev_contacts = MAKE_NEW(a, Hash<ActorListener::PrevContact>, a);
       }
-
+      l.untouched_user_data = user_data;
       l.untouched_callback = callback;
       hash::set(w.listeners, actor, l);
     }
@@ -810,7 +810,7 @@ namespace pge
             }
 
             if (l->value.touched_callback && array::size(result) > 0)
-              l->value.touched_callback(result);
+              l->value.touched_callback(result, l->value.touched_user_data);
 
             array::clear(result);
             cend = hash::end(prev_contacts);
@@ -820,7 +820,7 @@ namespace pge
             }
 
             if (l->value.untouched_callback && array::size(result) > 0)
-              l->value.untouched_callback(result);
+              l->value.untouched_callback(result, l->value.untouched_user_data);
 
             for (u32 i = 0; i < array::size(result); i++)
               hash::remove(prev_contacts, result[i].actor);
