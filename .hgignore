@@ -52,3 +52,4 @@ platform/win32/tools/json_validator/src
 
 */build/*
 */tool_center/config.json
+*log.txt

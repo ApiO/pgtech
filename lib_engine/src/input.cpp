@@ -39,12 +39,14 @@ namespace
   struct Pad
   {
     Pad() : current(PAD_DISCONNECTED), previous(PAD_DISCONNECTED),
-      num_buttons(0), name(0), button_states(0){}
-    char    *name;
-    PadState current;
-    PadState previous;
-    i32      num_buttons;
+      num_buttons(NULL), name(NULL), button_states(NULL), axes(NULL){}
+    char         *name;
+    PadState      current;
+    PadState      previous;
+    i32           num_buttons;
     ButtonStates *button_states;
+    i32           num_axes;
+    f32          *axes;
   };
 
   struct InputSystem
@@ -108,7 +110,7 @@ namespace pge
     {
       Allocator &a = *s->pads._allocator;
 
-      // check pads connection & updates buttons
+      // updates pads
       for (u32 i = 0; i < MAX_NUM_PADS; i++) {
         Pad &pad = s->pads[i];
 
@@ -120,12 +122,14 @@ namespace pge
 
         const unsigned char* states = glfwGetJoystickButtons(i, &pad.num_buttons);
 
+        // checks pads connection
         if (pad.current == PAD_CONNECTED && pad.previous == PAD_DISCONNECTED) {
           if (pad.name) {
             a.deallocate(pad.name);
             a.deallocate(pad.button_states);
+            a.deallocate(pad.axes);
           }
-
+          // inits buttons state
           const char *name = glfwGetJoystickName(i);
           pad.name = (char*)a.allocate(sizeof(char)*strlen(name));
           strcpy(pad.name, name);
@@ -133,20 +137,34 @@ namespace pge
           pad.button_states = (ButtonStates*)a.allocate(sizeof(ButtonStates)*pad.num_buttons);
           for (i32 j = 0; j < pad.num_buttons; j++)
             pad.button_states[j] = ButtonStates(states[j] == 1, false);
-        } else
+
+          // sets axes values
+          const f32 *values = glfwGetJoystickAxes(i, &pad.num_axes);
+          u32 size = sizeof(f32)*pad.num_axes;
+          pad.axes = (f32*)a.allocate(size);
+          memcpy(pad.axes, values, size);
+        }
+        else
+        {
+          // updates buttons state
           for (i32 j = 0; j < pad.num_buttons; j++) {
             pad.button_states[j].previous = pad.button_states[j].current;
             pad.button_states[j].current  = states[j] == 1;
           }
+          // updates axes values
+          const f32 *values = glfwGetJoystickAxes(i, &pad.num_axes);
+          u32 size = sizeof(f32)*pad.num_axes;
+          memcpy(pad.axes, values, size);
+        }
       }
 
-      // update keyborad buttons
+      // updates keyborad buttons
       for (u32 i = 0; i < KEYBOARD_NUM_BUTTONS; i++) {
         s->keyboard_buttons[i].previous = s->keyboard_buttons[i].current;
         s->keyboard_buttons[i].current  = glfwGetKey(w, i) == GLFW_PRESS;
       }
 
-      // update mouse buttons
+      // updates mouse buttons
       for (u32 i = 0; i < MOUSE_NUM_BUTTONS; i++) {
         s->mouse_buttons[i].previous = s->mouse_buttons[i].current;
         s->mouse_buttons[i].current  = glfwGetMouseButton(w, i) == GLFW_PRESS;
@@ -173,6 +191,7 @@ namespace pge
 
         a.deallocate(s->pads[i].name);
         a.deallocate(s->pads[i].button_states);
+        a.deallocate(s->pads[i].axes);
       }
 
       MAKE_DELETE(a, InputSystem, s);
@@ -249,15 +268,12 @@ namespace pge
 
     i32 num_axes(u32 pad)
     {
-      i32 num_axes;
-      glfwGetJoystickAxes(pad, &num_axes);
-      return num_axes;
+      return s->pads[pad].num_axes;
     }
 
     f32 axes(u32 pad, u32 i)
     {
-      i32 num_axes;
-      return *(glfwGetJoystickAxes(pad, &num_axes) + i);
+      return s->pads[pad].axes[i];
     }
   }
 
