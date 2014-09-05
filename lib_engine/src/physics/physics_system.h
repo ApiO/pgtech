@@ -36,8 +36,15 @@ namespace pge
     bool is_kinematic  (PhysicsWorld &w, u64 actor);
     void set_kinematic (PhysicsWorld &w, u64 actor, bool value);
 
+    void get_position  (PhysicsWorld &w, u64 actor, glm::vec2 &p);
+    void get_rotation  (PhysicsWorld &w, u64 actor, f32 &r);
+
     void get_velocity  (PhysicsWorld &w, u64 actor, glm::vec3 &v);
     void set_velocity  (PhysicsWorld &w, u64 actor, const glm::vec3 &v);
+
+
+    //get position, rot avec check
+
 
     void set_touched_callback   (PhysicsWorld &w, u64 actor, ContactCallback callback, const void *user_data);
     void set_untouched_callback (PhysicsWorld &w, u64 actor, ContactCallback callback, const void *user_data);

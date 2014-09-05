@@ -98,14 +98,25 @@ namespace pge
 
     void get_local_position(u64 world, u64 actor, glm::vec3 &v)
     {
-      pose::get_local_translation(
-        physics_system::get_pose(application::world(world).physics_world, actor), v);
+      World &w = application::world(world);
+      if (physics_system::is_physical(w.physics_world, actor)){
+        physics_system::get_position(w.physics_world, actor, (glm::vec2&)v);
+        v.z = 0;
+      }
+      else
+        pose::get_local_translation(physics_system::get_pose(w.physics_world, actor), v);
     }
 
     void get_local_rotation(u64 world, u64 actor, glm::quat &q)
     {
-      pose::get_local_rotation(
-        physics_system::get_pose(application::world(world).physics_world, actor), q);
+      World &w = application::world(world);
+      if (physics_system::is_physical(w.physics_world, actor)){
+        f32 rz;
+        physics_system::get_rotation(w.physics_world, actor, rz);
+        q = glm::quat(glm::vec3(0, 0, rz));
+      }
+      else
+      pose::get_local_rotation(physics_system::get_pose(w.physics_world, actor), q);
     }
 
     void get_local_scale(u64 world, u64 actor, glm::vec3 &v)
@@ -117,8 +128,8 @@ namespace pge
     void get_local_pose(u64 world, u64 actor, glm::mat4 &m)
     {
       compose_mat4(m,
-                   physics_system::get_pose(application::world(world).physics_world, actor)
-                   ._local);
+        physics_system::get_pose(application::world(world).physics_world, actor)
+        ._local);
     }
 
     void set_local_position(u64 world, u64 actor, const glm::vec3 &v)
@@ -150,7 +161,7 @@ namespace pge
     u64 unit(u64 world, u64 actor)
     {
       World &w = application::world(world);
-      const UnitRef ur = {0};
+      const UnitRef ur = { 0 };
       return hash::get(w.actor_unit, actor, ur).unit;
     }
 

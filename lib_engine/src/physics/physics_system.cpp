@@ -498,12 +498,24 @@ namespace pge
     {
       return idlut::lookup(w.actors, actor)->kinematic;
     }
+    
 
+    void get_position(PhysicsWorld &w, u64 actor, glm::vec2 &p)
+    {
+      physics::get_body_position(idlut::lookup(w.actors, actor)->body, p);
+      p *= ppm;
+    }
+    
+    void get_rotation(PhysicsWorld &w, u64 actor, f32 &r)
+    {
+      r = physics::get_body_rotation(idlut::lookup(w.actors, actor)->body);
+    }
 
     void get_velocity(PhysicsWorld &w, u64 actor, glm::vec3 &v)
     {
       physics::get_velocity(idlut::lookup(w.actors, actor)->body, (glm::vec2&)v);
     }
+    
 
     void set_velocity(PhysicsWorld &w, u64 actor, const glm::vec3 &v)
     {
