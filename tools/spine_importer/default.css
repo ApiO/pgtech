@@ -1,0 +1,18 @@
+body{
+	border: 1px solid #00356A !important;
+}
+
+#holder { text-align: center; padding-top:10%; height: 99%;}
+
+#config {
+	height: 100%;
+	margin: 0;
+}
+
+#config-bottom {
+	position: fixed;
+  	bottom: 22px;
+  	left: 1px;
+  	padding : 10px 20px;
+  	background-color:#222222;
+}

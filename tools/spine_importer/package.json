@@ -1,18 +1,18 @@
 {
 	"main" : "index.html",
-	"name" : "Physics Manager",
-	"description" : "Physics Manager",
+	"name" : "Spine importer",
+	"description" : "Quasar engine template",
 	"version" : "0.1.0",
 	"window" : {
-		"title" : "Physics Manager",
+		"title" : "Spine importer",
 		"icon" : "link.png",
 		"toolbar" : false,
 		"frame" : false,
-		"width" : 800,
-		"height" : 800,
+		"width" : 640,
+		"height" : 360,
 		"position" : "center",
-		"min_width" : 400,
-		"min_height" : 200
+		"min_width" : 640,
+		"min_height" : 360
 	},
 	"webkit" : {
 		"plugin" : true
