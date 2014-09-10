@@ -5,8 +5,20 @@ body{
 #holder { text-align: center; padding-top:10%; height: 99%;}
 
 #config {
-	height: 100%;
 	margin: 0;
+}
+
+#res-container{
+	margin-top:22px;
+}
+	#res-container label{
+		margin: 10px 0;
+	}
+	
+.comment
+{
+	font-style: italic;
+	color:gray;
 }
 
 #config-bottom {
@@ -15,4 +27,9 @@ body{
   	left: 1px;
   	padding : 10px 20px;
   	background-color:#222222;
+}
+
+.metro .text-alert {
+	margin: 0;
+	font-size: smaller;
 }

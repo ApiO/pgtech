@@ -34,13 +34,7 @@
 			<p class="subheader">Resource informations:</p>
 			<div id="res-container">
 				    <label>Spine file:  <span id="spine_file"/></<span></label>
-				    <label>Path:  <input type="text" id="resource_path"/></label>
-				    <label>Name: <input type="text" id="resource_name"/></label>
-				    <label>
-				        <input type="checkbox" id="override" checked/>
-				        <span class="check"></span>
-				        Override existing resource
-				    </label>
+				    <label>Name: <input type="text" id="resource_name"/> <small class="comment">Override existing resource</small></label>
 			</div>
 			<div id="config-bottom">
 				<div class="place-right">
@@ -48,11 +42,11 @@
 					<button class="large inverse" id="cancel">Cancel</button>
 				</div>
 			</div>
+		    <div id="message"></div>
 		</div>
-		
 	</div>
 	
-	<div class="status-bar bg-darkBlue">
+	<div class="status-bar bg-darkCobalt">
 		<span>Ready</span>
 	</div>
     <script>
