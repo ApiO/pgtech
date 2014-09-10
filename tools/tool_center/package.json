@@ -9,10 +9,10 @@
     "toolbar": false,
     "frame": false,
     "width": 820,
-    "height": 550,
+    "height": 680,
     "position": "center",
     "min_width": 820,
-    "min_height": 550
+    "min_height": 680
   },
   "webkit": {
     "plugin": true
