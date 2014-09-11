@@ -33,7 +33,13 @@ namespace pge
       text_system::get_height(application::world(world).text_system, text, v);
     }
 
-    // Sets the text’s string, font or alignment
+
+    void set(u64 world, u64 text, const char *font, const char *string, TextAlign align, f32 scale, const Color &color)
+    {
+      World &w = application::world(world);
+      text_system::set(w.text_system, text, (FontResource*)resource_manager::get(RESOURCE_TYPE_FONT, murmur_hash_32(font)), string, align, scale, color);
+    }
+
     void set_string(u64 world, u64 text, const char *string)
     {
       World &w = application::world(world);
@@ -52,10 +58,16 @@ namespace pge
       text_system::set_alignment(w.text_system, text, align);
     }
 
-    void set(u64 world, u64 text, const char *font, const char *string, TextAlign align)
+    void set_scale(u64 world, u64 text, f32 scale)
     {
       World &w = application::world(world);
-      text_system::set(w.text_system, text, (FontResource*)resource_manager::get(RESOURCE_TYPE_FONT, murmur_hash_32(font)), string, align);
+      text_system::set_scale(w.text_system, text, scale);
+    }
+
+    void set_color(u64 world, u64 text, const Color &color)
+    {
+      World &w = application::world(world);
+      text_system::set_color(w.text_system, text, color);
     }
 
 

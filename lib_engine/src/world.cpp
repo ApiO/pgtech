@@ -496,10 +496,10 @@ namespace pge
 
     // TEXT
 
-    u64 spawn_text(u64 world, const char *font, const char *text, TextAlign align, const glm::vec3 &position, const glm::quat &rotation)
+    u64 spawn_text(u64 world, const char *font, const char *text, TextAlign align, const glm::vec3 &position, const glm::quat &rotation, f32 scale, const Color &color)
     {
       World &w  = application::world(world);
-      u64   id  = text_system::create(w.text_system, (FontResource*)resource_manager::get(RESOURCE_TYPE_FONT, murmur_hash_32(font)), text, align);
+      u64   id  = text_system::create(w.text_system, (FontResource*)resource_manager::get(RESOURCE_TYPE_FONT, murmur_hash_32(font)), text, align, scale, color);
       Pose  &p  = text_system::get_pose(w.text_system, id);
 
       pose::set_local_translation(p, position);

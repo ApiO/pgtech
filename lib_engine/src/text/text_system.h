@@ -7,19 +7,22 @@ namespace pge
 {
   namespace text_system
   {
-    u64  create   (TextSystem &system, const FontResource *font, const char *string, TextAlign align);
+    u64  create(TextSystem &system, const FontResource *font, const char *string, TextAlign align, f32 scale, const Color &color);
     void destroy  (TextSystem &system, u64 text);
     void update   (TextSystem &system);
     void gather   (TextSystem &system);
     void draw     (const Graphic *graphics, u32 num_items, RenderBuffer &render_buffer);
 
-    void get_size(TextSystem &system, u64 text, glm::vec2 &size);
-    void get_width(TextSystem &system, u64 text, f32 &v);
-    void get_height(TextSystem &system, u64 text, f32 &v);
+    void get_size      (TextSystem &system, u64 text, glm::vec2 &size);
+    void get_width     (TextSystem &system, u64 text, f32 &v);
+    void get_height    (TextSystem &system, u64 text, f32 &v);
+    
+    void set           (TextSystem &system, u64 text, const FontResource *font, const char *string, TextAlign align, f32 scale, const Color &color);
     void set_string    (TextSystem &system, u64 text, const char *string);
     void set_font      (TextSystem &system, u64 text, const FontResource *font);
     void set_alignment (TextSystem &system, u64 text, TextAlign align);
-    void set           (TextSystem &system, u64 text, const FontResource *font, const char *string, TextAlign align);
+    void set_scale     (TextSystem &system, u64 text, f32 scale);
+    void set_color     (TextSystem &system, u64 text, const Color &color);
 
     Pose &get_pose     (TextSystem &system, u64 text);
   }

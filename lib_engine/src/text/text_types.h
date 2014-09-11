@@ -29,8 +29,10 @@ namespace pge
     Pose      pose;
     char     *string;
     TextAlign align;
-    i32       width;
-    i32       height;
+    f32       width;
+    f32       height;
+    Color     color;
+    f32       scale;
     const FontResource *font;
     Array<CharInfo>     char_infos;
     Array<PageRange>    page_ranges;

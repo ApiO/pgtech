@@ -16,23 +16,10 @@
 #include <utils/ogl_debug.h>
 #include "text_system.h"
 #include "font_resource.h"
-//#include <culling/culling_system.h>
-//#include <scene/scene_system.h> // TODO à virer (importé pour mat4_to_pose)
 
 namespace
 {
   using namespace pge;
-
-  //-------------------------------------------------------------------------------------
-  //  DEV : RESOURCE MANAGER STUFF
-  //-------------------------------------------------------------------------------------
-  const u8 COLORS[] ={
-    255, 255, 255, 255,
-    255, 255, 255, 255,
-    255, 255, 255, 255,
-    255, 255, 255, 255
-  };
-  //-------------------------------------------------------------------------------------
 
 #define is_ignored_char(c)((c) == '\b' || (c) == '\f' || (c) == '\r' || (c) == '\t' || (c) == '\v')
 
@@ -50,7 +37,8 @@ namespace
   struct CharPose
   {
     u32     page;
-    u32     x, line_index;
+    f32     x;
+    u32     line_index;
     wchar_t chr;
   };
 
@@ -72,16 +60,17 @@ namespace
   {
     wchar_t wchar, wctmp;
 
-    i32 max_width = 0,
-      curr_width  = 0,
-      line_index  = 0,
-      curr_chars  = 0;
+    f32 max_width = 0.f,
+        curr_width = 0.f;
+
+    i32 line_index  = 0,
+        curr_chars  = 0;
 
     LineInfo *line_info = line_infos;
 
     const char *start = text->string;
     const char *send  = text->string + strlen(text->string);
-    u32 line_height   = font_resource::line_height(text->font);
+    f32 line_height   = font_resource::line_height(text->font) * text->scale;
 
     while (start < send) {
       start += mbtowc(&wctmp, start, start - send);
@@ -90,8 +79,8 @@ namespace
 
       // LINE INFO
       if (wctmp == L'\n') {
-        line_info->offset_x = (f32)curr_width;
-        line_info->offset_y = (f32)(line_height * line_index)*-1;
+        line_info->offset_x = curr_width;
+        line_info->offset_y = -(line_height * line_index);
         line_info++;
         line_index++;
         if (max_width < curr_width) max_width = curr_width;
@@ -111,15 +100,16 @@ namespace
 
       hash::set(pages, (u64)chr.page, chr.page);
 
-      curr_width += chr.x_advance;
+      curr_width += chr.x_advance * text->scale;
       curr_chars++;
     }
-    line_info->offset_x = (f32)curr_width;
-    line_info->offset_y = (f32)(line_height * line_index)*-1;
+    line_info->offset_x = curr_width;
+    line_info->offset_y = -(line_height * line_index) ;
+
     if (max_width < curr_width) max_width = curr_width;
 
     text->width  = max_width;
-    text->height = font_resource::line_height(text->font) * num_lines;
+    text->height = font_resource::line_height(text->font) * num_lines * text->scale;
   }
 
   inline void set_vertices(Text *text, CharPose *char_poses, LineInfo *line_infos, u32 num_lines, u32 num_chars, Allocator &a)
@@ -158,14 +148,14 @@ namespace
       f32 x = (f32)(chr.offset_x + line_info.offset_x + char_pose.x);
       f32 y = (f32)(-chr.offset_y + line_info.offset_y);
 
-      char_info->vertices[0] = x;
-      char_info->vertices[1] = y - chr.height;
-      char_info->vertices[2] = x;
-      char_info->vertices[3] = y;
-      char_info->vertices[4] = x + chr.width;
-      char_info->vertices[5] = y;
-      char_info->vertices[6] = x + chr.width;
-      char_info->vertices[7] = y - chr.height;
+      char_info->vertices[0] = x * text->scale;
+      char_info->vertices[1] = (y - chr.height) * text->scale;
+      char_info->vertices[2] = x * text->scale;
+      char_info->vertices[3] = y * text->scale;
+      char_info->vertices[4] = (x + chr.width) * text->scale;
+      char_info->vertices[5] = y * text->scale;
+      char_info->vertices[6] = (x + chr.width) * text->scale;
+      char_info->vertices[7] = (y - chr.height) * text->scale;
 
       char_info++;
     }
@@ -243,11 +233,13 @@ namespace pge
 {
   namespace text_system
   {
-    u64 create(TextSystem &system, const FontResource *font, const char *string, TextAlign align)
+    u64 create(TextSystem &system, const FontResource *font, const char *string, TextAlign align, f32 scale, const Color &color)
     {
       Text *text  = MAKE_NEW(*system._data._allocator, Text, *system._data._allocator);
       text->align = align;
       text->font  = font;
+      text->scale = scale;
+      text->color = color;
 
       if (string) {
         text->string = (char*)system._data._allocator->allocate(sizeof(char)*strlen(string));
@@ -265,64 +257,6 @@ namespace pge
       a.deallocate(t->string);
       MAKE_DELETE(a, Text, t);
       idlut::remove(system, text);
-    }
-
-    void set_string(TextSystem &system, u64 text, const char *string)
-    {
-      Allocator &a = *system._data._allocator;
-      Text *t = *idlut::lookup(system, text);
-
-      if (t->string){
-        a.deallocate(t->string);
-        t->string = NULL;
-      }
-
-      if (string)
-      {
-        t->string = (char*)a.allocate(sizeof(char)*strlen(string));
-        strcpy(t->string, string);
-        _set_text(t);
-        return;
-      }
-
-      array::clear(t->char_infos);
-      array::clear(t->page_ranges);
-    }
-
-    void set_font(TextSystem &system, u64 text, const FontResource *font)
-    {
-      Text *t = *idlut::lookup(system, text);
-      t->font = font;
-      _set_text(t);
-    }
-
-    void set_alignment(TextSystem &system, u64 text, TextAlign align)
-    {
-      Text *t = *idlut::lookup(system, text);
-      t->align = align;
-      _set_text(t);
-    }
-
-    void set(TextSystem &system, u64 text, const FontResource *font, const char *string, TextAlign align)
-    {
-      ASSERT(string);
-
-      Allocator &a = *system._data._allocator;
-      Text *t = *idlut::lookup(system, text);
-
-      if (t->string)
-        a.deallocate(t->string);
-      t->string = (char*)a.allocate(sizeof(char)*strlen(string));
-      strcpy(t->string, string);
-
-      t->font = font;
-      t->align = align;
-      _set_text(t);
-    }
-
-    Pose &get_pose(TextSystem &system, u64 text)
-    {
-      return (*idlut::lookup(system, text))->pose;
     }
 
     void update(TextSystem &system)
@@ -349,7 +283,7 @@ namespace pge
         pose::get_world_translation(text->pose, translation);
 
         SortKey sort_key;
-        sort_key.z     = translation.z;
+        sort_key.z = translation.z;
         sort_key.value = 1000u;
 
         // Allocates & inits TextData
@@ -357,27 +291,27 @@ namespace pge
         u8 *data = NULL;
         {
           u32 num_chars = array::size(text->char_infos);
-          u32 data_size = sizeof(TextData)+
+          u32 data_size = sizeof(TextData) +
             num_chars * (SPRITE_VERTICES_SIZE + SPRITE_TEXCOORD_SIZE + SPRITE_COLORS_SIZE + SPRITE_INDICES_SIZE) +
             array::size(text->page_ranges) * sizeof(Text::PageRange);
 
           data = renderer::create_graphic(GRAPHIC_TYPE_TEXT, data_size, sort_key);
           text_data = (TextData*)data;
 
-          text_data->num_chars       = num_chars;
-          text_data->num_ranges      = array::size(text->page_ranges);
-          text_data->ranges_offest   = sizeof(TextData);
+          text_data->num_chars = num_chars;
+          text_data->num_ranges = array::size(text->page_ranges);
+          text_data->ranges_offest = sizeof(TextData);
           text_data->vertices_offest = text_data->ranges_offest + array::size(text->page_ranges) * sizeof(Text::PageRange);
           text_data->texcoord_offest = text_data->vertices_offest + num_chars * SPRITE_VERTICES_SIZE;
-          text_data->colors_offest   = text_data->texcoord_offest + num_chars * SPRITE_TEXCOORD_SIZE;
-          text_data->indices_offest  = text_data->colors_offest + num_chars * SPRITE_COLORS_SIZE;
+          text_data->colors_offest = text_data->texcoord_offest + num_chars * SPRITE_TEXCOORD_SIZE;
+          text_data->indices_offest = text_data->colors_offest + num_chars * SPRITE_COLORS_SIZE;
         }
 
         // Push final data
         glm::vec3 *vertices = (glm::vec3*)(data + text_data->vertices_offest);
         glm::vec2 *texcoord = (glm::vec2*)(data + text_data->texcoord_offest);
-        RGBA      *colors   = (RGBA*)(data + text_data->colors_offest);
-        u16       *indices  = (u16*)(data + text_data->indices_offest);
+        RGBA      *colors = (RGBA*)(data + text_data->colors_offest);
+        u16       *indices = (u16*)(data + text_data->indices_offest);
 
         Text::PageRange *range = (Text::PageRange*)(data + text_data->ranges_offest);
         memcpy(range, text->page_ranges._data, text->page_ranges._size * sizeof(Text::PageRange));
@@ -391,7 +325,7 @@ namespace pge
           start_indice = i * 6;
           tmp = i * 4;
 
-          indices[start_indice]     = u16(tmp);
+          indices[start_indice] = u16(tmp);
           indices[start_indice + 1] = u16(tmp + 1);
           indices[start_indice + 2] = u16(tmp + 2);
           indices[start_indice + 3] = u16(tmp + 2);
@@ -399,7 +333,7 @@ namespace pge
           indices[start_indice + 5] = u16(tmp);
 
           // APPLIES WORLD POSE
-          vertices[tmp]     = (glm::vec3)(world_pose * glm::vec4(char_info.vertices[0], char_info.vertices[1], 0.f, 1.f));
+          vertices[tmp] = (glm::vec3)(world_pose * glm::vec4(char_info.vertices[0], char_info.vertices[1], 0.f, 1.f));
           vertices[tmp + 1] = (glm::vec3)(world_pose * glm::vec4(char_info.vertices[2], char_info.vertices[3], 0.f, 1.f));
           vertices[tmp + 2] = (glm::vec3)(world_pose * glm::vec4(char_info.vertices[4], char_info.vertices[5], 0.f, 1.f));
           vertices[tmp + 3] = (glm::vec3)(world_pose * glm::vec4(char_info.vertices[6], char_info.vertices[7], 0.f, 1.f));
@@ -409,7 +343,7 @@ namespace pge
           memcpy(&texcoord[tmp], chr.tex_coord, 4 * TEXCOORD_SIZE);
 
           // COLORS
-          memcpy(&colors[tmp], COLORS, 4 * COLOR_SIZE);
+          for (u32 i = 0; i < 4; i++) colors[tmp+i] = text->color;
         }
       }
     }
@@ -485,6 +419,12 @@ namespace pge
 
       PRINT_GL_LAST_ERROR();
     }
+    
+
+    Pose &get_pose(TextSystem &system, u64 text)
+    {
+      return (*idlut::lookup(system, text))->pose;
+    }
 
     void get_size(TextSystem &system, u64 text, glm::vec2 &size)
     {
@@ -500,6 +440,76 @@ namespace pge
     void get_height(TextSystem &system, u64 text, f32 &v)
     {
       v = (f32)(*idlut::lookup(system, text))->height;
+    }
+
+
+  
+    void set(TextSystem &system, u64 text, const FontResource *font, const char *string, TextAlign align, f32 scale, const Color &color)
+    {
+      ASSERT(string);
+
+      Allocator &a = *system._data._allocator;
+      Text *t = *idlut::lookup(system, text);
+
+      if (t->string)
+        a.deallocate(t->string);
+      t->string = (char*)a.allocate(sizeof(char)*strlen(string));
+      strcpy(t->string, string);
+
+      t->font  = font;
+      t->align = align;
+      t->scale = scale;
+      t->color = color;
+
+      _set_text(t);
+    }
+
+    void set_string(TextSystem &system, u64 text, const char *string)
+    {
+      Allocator &a = *system._data._allocator;
+      Text *t = *idlut::lookup(system, text);
+
+      if (t->string){
+        a.deallocate(t->string);
+        t->string = NULL;
+      }
+
+      if (string)
+      {
+        t->string = (char*)a.allocate(sizeof(char)*strlen(string));
+        strcpy(t->string, string);
+        _set_text(t);
+        return;
+      }
+
+      array::clear(t->char_infos);
+      array::clear(t->page_ranges);
+    }
+
+    void set_font(TextSystem &system, u64 text, const FontResource *font)
+    {
+      Text *t = *idlut::lookup(system, text);
+      t->font = font;
+      _set_text(t);
+    }
+
+    void set_alignment(TextSystem &system, u64 text, TextAlign align)
+    {
+      Text *t = *idlut::lookup(system, text);
+      t->align = align;
+      _set_text(t);
+    }
+
+    void set_scale(TextSystem &system, u64 text, f32 scale)
+    {
+      Text *t = *idlut::lookup(system, text);
+      t->scale = scale;
+      _set_text(t);
+    }
+
+    void set_color(TextSystem &system, u64 text, const Color &color)
+    {
+      (*idlut::lookup(system, text))->color = color;
     }
   }
 

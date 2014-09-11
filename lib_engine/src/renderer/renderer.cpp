@@ -573,6 +573,7 @@ namespace pge
       default:
         XERROR("Graphic item type (%d) not handled", (i32)type);
       }
+      return 0;
     }
   }
 }

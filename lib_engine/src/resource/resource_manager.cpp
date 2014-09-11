@@ -107,6 +107,7 @@ namespace
   }
 
   int loader_update(void *arg) {
+    (void)arg;
     Array<ResourceManager::Command> &back_buf = _rmng->loader_back_buffer;
     bool run = true;
 

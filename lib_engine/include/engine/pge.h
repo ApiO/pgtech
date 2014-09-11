@@ -96,7 +96,7 @@ namespace pge
     u64 spawn_sprite(u64 world, const char *name, const glm::vec3 &position, const glm::quat &rotation, const glm::vec3 &scale = glm::vec3(1.f));
 
     // Spawns a new text with the specified 'font', 'text' and 'align' at the specified 'translation' and 'rotation'.
-    u64 spawn_text(u64 world, const char *font, const char *text, TextAlign align, const glm::vec3 &position, const glm::quat &rotation);
+    u64 spawn_text(u64 world, const char *font, const char *text, TextAlign align, const glm::vec3 &position, const glm::quat &rotation, f32 scale = 1.f, const Color &color = Color(255));
 
     u64 spawn_line(u64 world, const glm::vec3 &a, const glm::vec3 &b, const Color &color, const glm::vec3 &position, const glm::quat &rotation);
 
@@ -361,10 +361,12 @@ namespace pge
     void get_height(u64 world, u64 text, f32 &v);
 
     // Sets the text’s string, font or alignment
+    void set(u64 world, u64 text, const char*font, const char *string, TextAlign align, f32 scale = 1.f, const Color &color = Color(255));
     void set_string(u64 world, u64 text, const char *string);
     void set_font(u64 world, u64 text, const char*font);
     void set_alignment(u64 world, u64 text, TextAlign align);
-    void set(u64 world, u64 text, const char*font, const char *string, TextAlign align);
+    void set_scale(u64 world, u64 text, f32 scale);
+    void set_color(u64 world, u64 text, const Color &color);
 
     // Returns the text’s world position, rotation or pose
     void get_world_position(u64 world, u64 text, glm::vec3 &v);

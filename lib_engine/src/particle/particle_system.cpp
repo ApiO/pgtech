@@ -60,7 +60,7 @@ namespace pge
 
     void update(ParticleSystem &system, f64 dt)
     {
-      const f32 sdt = dt;
+      const f32 sdt = (f32)dt;
       u32 j;
       IdLookupTable<ParticleEmitter>::Entry *e, *end = idlut::end(system.emitters);
 
@@ -149,7 +149,7 @@ namespace pge
       e.accu_despawn  = 0;
       e.hot           = false;
       e.num_particles = 0;
-      e.max_particles = res->rate * res->lifespan;
+      e.max_particles = (u32)(res->rate * res->lifespan);
       e.sequence      = 0;
       e.positions     = (glm::vec3*)a.allocate(PARTICLE_SIZE * e.max_particles);
       e.velocities    = e.positions  + e.max_particles;
@@ -200,11 +200,10 @@ namespace pge
     {
       IdLookupTable<ParticleEmitter>::Entry *e, *end = idlut::end(system.emitters);
       u32 i, j;
-      u32 rounded_num_particles;
 
       for (e = idlut::begin(system.emitters); e < end; e++) {
         u32 tex_size[2];
-        tex_size[0] = tex_size[1] = next_pow2_u32((u32)ceil(sqrtf(e->value.num_particles)));
+        tex_size[0] = tex_size[1] = next_pow2_u32((u32)ceil(sqrtf((f32)e->value.num_particles)));
         if (tex_size[0] * tex_size[1] / 2 >= e->value.num_particles)
           tex_size[1] /= 2;
 
@@ -246,6 +245,7 @@ namespace pge
 
     void draw(const Graphic *graphics, u32 num_items, RenderBuffer &render_buffer)
     {
+      (void)render_buffer;
       glEnable(GL_BLEND);
       glDisable(GL_DEPTH_TEST);
       glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);

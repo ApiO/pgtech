@@ -34,7 +34,7 @@ namespace pge
       u64 node_id;
       LevelResource::Resource unit;
 
-      for (u32 i = 0; i < json::size(jsn, units); i++)
+      for (i32 i = 0; i < json::size(jsn, units); i++)
       {
         node_id = json::get_id(jsn, units, i);
         if (!json::has(jsn, node_id, "translation")) {
@@ -54,7 +54,7 @@ namespace pge
       u64 node_id;
       LevelResource::Resource sprite;
 
-      for (u32 i = 0; i < json::size(jsn, sprites); i++)
+      for (i32 i = 0; i < json::size(jsn, sprites); i++)
       {
         node_id = json::get_id(jsn, sprites, i);
         if (!json::has(jsn, node_id, "translation")) {
