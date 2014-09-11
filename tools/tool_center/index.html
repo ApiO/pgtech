@@ -143,7 +143,6 @@
   	<nav class="navigation-bar">
 	    <nav class="navigation-bar-content">
 	        <a class="element" href="#">TOOL CENTER</a>
-	 	        
 	        <a class="element place-right" href="#" id="win-close"><span class="icon-cancel-2"></span></a>
 	        <span class="element-divider place-right"></span>
 	        <a class="element place-right" href="#" id="win-maximize"><span class="icon-window"></span></a>
@@ -158,35 +157,33 @@
 	</div>
 	
     <script>		
-    	var gui 	 = require('nw.gui');
-    	var win   = gui.Window.get();
-		var fs     = require('fs');
-		var cp    = require('child_process');
+    	var gui  	= require('nw.gui');
+    	var win 	= gui.Window.get();
+		var fs     	= require('fs');
+		var cp    	= require('child_process');
 		var open = require('../common/node_modules/open');
 		var config_path   = gui.App.argv[0];
 		var source_path 	= null;
 		var data_path 	= null;
 		var level_editor   = null;
-		var console        = null;
+		var console        	= null;
 		
 		$(document).ready(function() 
 		{		
 			/* events	*/
 			
-			$("#win-close").click(function() {
-				win.close(true);
-			});
-			
-			$("#win-dev").click(Window.showDevTools);
-			
+			$("#win-close").click(function() { win.close(true); });			
+			$("#win-maximize").click(function() { win.maximize(); });			
+			$("#win-minimize").click(function() { win.minimize(); });
+						
 			document.addEventListener("keyup", function(event) {
 				switch(event.keyCode){
-				case 123: 
+				case 123: // F12
 					win.showDevTools();
 					event.preventDefault();
 					event.stopPropagation();
 					return false;
-				case 116: 
+				case 116: // F5
 					win.reload();
 					event.preventDefault();
 					event.stopPropagation();
@@ -213,25 +210,15 @@
 			
 			$('#project_name').text(config.project_name);
 			
-			$("#content_browser").click(function() {
-				cp.execFile("..\\common\\nw.exe", ["..\\content_browser", source_path, data_path]);
-			});
+			$("#content_browser").click(function() { cp.execFile("..\\common\\nw.exe", ["..\\content_browser", source_path, data_path]); });
 			
-			$("#linkage_checker").click(function() {
-				cp.execFile("..\\common\\nw.exe", ["..\\linkage_checker", source_path, data_path]);
-			});
+			$("#linkage_checker").click(function() { cp.execFile("..\\common\\nw.exe", ["..\\linkage_checker", source_path, data_path]); });
 			
-			$("#spine_importer").click(function() {
-				cp.execFile("..\\common\\nw.exe", ["..\\spine_importer", source_path, data_path]);
-			});
+			$("#spine_importer").click(function() { cp.execFile("..\\common\\nw.exe", ["..\\spine_importer", source_path, data_path]); });
 
-			$("#physics_manager").click(function() {
-				cp.execFile("..\\common\\nw.exe", ["..\\physics_manager", source_path, data_path]);
-			});
+			$("#physics_manager").click(function() { cp.execFile("..\\common\\nw.exe", ["..\\physics_manager", source_path, data_path]); });
 			
-			$("#search_string").click(function() {
-				cp.execFile("..\\common\\nw.exe", ["..\\search_string", source_path, data_path]);
-			});
+			$("#search_string").click(function() { cp.execFile("..\\common\\nw.exe", ["..\\search_string", source_path, data_path]); });
 			
 			$("#run").click(function() {
 				cp.execFile(game_path, [data_path], null, function(error, stdout, stderr){
@@ -248,17 +235,11 @@
 				});
 			});
 			
-			$("#console").click(function() { 
-				cp.execFile(console, null, null, function(error, stdout, stderr){if(error) alert(error);});
-			});
+			$("#console").click(function() { cp.execFile(console, null, null, function(error, stdout, stderr){if(error) alert(error);}); });
 			
-			$("#data_folder").click(function() {
-				open(data_path)
-			});
+			$("#data_folder").click(function() { open(data_path) });
 			
-			$("#resources_folder").click(function() {
-				open(source_path)
-			});
+			$("#resources_folder").click(function() { open(source_path) });
 			
 		});
     </script>

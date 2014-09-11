@@ -45,24 +45,20 @@
 			
 		$(document).ready(function() 
 		{	
-			document.addEventListener("keyup", function(event) {
-				if(event.keyCode === 123) {
-					win.showDevTools();
-					event.preventDefault();
-					event.stopPropagation();
-					return false;
-				}
-				return true;
-			});
+			/* events	*/
 			
+			$("#win-close").click(function() { win.close(true); });			
+			$("#win-maximize").click(function() { win.maximize(); });			
+			$("#win-minimize").click(function() { win.minimize(); });
+						
 			document.addEventListener("keyup", function(event) {
 				switch(event.keyCode){
-				case 123: 
+				case 123: // F12
 					win.showDevTools();
 					event.preventDefault();
 					event.stopPropagation();
 					return false;
-				case 116: 
+				case 116: // F5
 					win.reload();
 					event.preventDefault();
 					event.stopPropagation();
@@ -71,18 +67,14 @@
 					return true;
 				}
 			});
-
-			$("#win-close").click(function() {
-				win.close(false);
-			});
-			
-			$("#win-dev").click(Window.showDevTools);
-						
-			$("#update_resources").click(update_resources);
 			
 			source_path = gui.App.argv[0];
 			data_path    = gui.App.argv[1];
+			
+			//----------------------------------------
 						
+			$("#update_resources").click(update_resources);
+			
 			update_resources();
 		});	
     </script>

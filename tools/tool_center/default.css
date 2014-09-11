@@ -13,6 +13,7 @@
 	background-color: #002435 !important;
 	border:0;
 	position: absolute;
+	top:0px;
 }
 .metro .navigation-bar .navigation-bar-content .element:hover
 {
