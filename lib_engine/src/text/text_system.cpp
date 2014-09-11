@@ -70,7 +70,7 @@ namespace
 
     const char *start = text->string;
     const char *send  = text->string + strlen(text->string);
-    f32 line_height   = font_resource::line_height(text->font) * text->scale;
+    f32 line_height   = font_resource::line_height(text->font);
 
     while (start < send) {
       start += mbtowc(&wctmp, start, start - send);
@@ -100,7 +100,7 @@ namespace
 
       hash::set(pages, (u64)chr.page, chr.page);
 
-      curr_width += chr.x_advance * text->scale;
+      curr_width += chr.x_advance;
       curr_chars++;
     }
     line_info->offset_x = curr_width;
