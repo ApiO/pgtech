@@ -57,8 +57,7 @@ namespace pge
       f64  time;
       bool played;
       const AnimsetResource *set;
-      const AnimsetResource::AnimationHeader
-        *animation_header;
+      const AnimsetResource::AnimationHeader *animation_header;
       const void  *animation_stream;
       const void  *playhead;
       BoneTrack   *bone_tracks;
@@ -66,9 +65,9 @@ namespace pge
       EventTrack  *event_tracks;
       CurvePoint<glm::vec2> *active_translation_points;
       CurvePoint<glm::vec2> *active_scale_points;
-      CurvePoint<f32>  *active_rotation_points;
+      CurvePoint<f32>       *active_rotation_points;
       CurvePoint<glm::vec4> *active_color_points;
-      Array<u16>       *events;
+      Array<u16>            *events;
     };
 
     IdLookupTable<Session> _sessions;

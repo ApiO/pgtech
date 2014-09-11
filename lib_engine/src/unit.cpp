@@ -163,7 +163,7 @@ namespace pge
       World &w = application::world(world);
       Unit  &u = *idlut::lookup(w.units, unit);
       const u32 anim_name = murmur_hash_32(animation);
-
+      
       if (u.player_session) {
         if (animation_player::playing_animation(w.animation_player, u.player_session) == anim_name)
           return;

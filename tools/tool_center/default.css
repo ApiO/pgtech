@@ -1,7 +1,32 @@
+.bg{
+    background: url('bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: black;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.navigation-bar {
+	background-color: #002435 !important;
+	border:0;
+	position: absolute;
+}
+.metro .navigation-bar .navigation-bar-content .element:hover
+{
+	background-color: #005075;
+}
+
+.content{
+	opacity: .95;
+}
+
 .tool_center{
-	border: 1px solid #005F8E !important;
+	border: 1px solid #002435 !important;
 }
 
 .tool_center-bar{
-	background-color: #005F8E !important;
+	background-color: #002435 !important;
 }

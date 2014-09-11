@@ -17,11 +17,11 @@ namespace pge
     void update(AnimationPlayer &system, f64 delta_time);
     u32  playing_animation(AnimationPlayer &system, u64 session);
     glm::vec2 get_bone_track_translation(AnimationPlayer &system, u64 session, u32 track_index);
-    f32 get_bone_track_rotation(AnimationPlayer &system, u64 session, u32 track_index);
+    f32       get_bone_track_rotation(AnimationPlayer &system, u64 session, u32 track_index);
     glm::vec2 get_bone_track_scale(AnimationPlayer &system, u64 session, u32 track_index);
-    u32  get_sprite_track_frame(AnimationPlayer &system, u64 session, u32 track_index);
+    u32       get_sprite_track_frame(AnimationPlayer &system, u64 session, u32 track_index);
     glm::vec4 get_sprite_track_color(AnimationPlayer &system, u64 session, u32 track_index);
-    void get_events(AnimationPlayer &system, u64 session, Array<u32> &events);
+    void      get_events(AnimationPlayer &system, u64 session, Array<u32> &events);
     void destroy_session(AnimationPlayer &system, u64 session);
   }
 }

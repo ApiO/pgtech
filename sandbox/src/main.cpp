@@ -19,9 +19,9 @@ namespace
 {
   using namespace app;
 
-#define USE_DEPLOY_STATMENT 0 // à switcher sur true lors de la publication de la sandbox
-#define DISPLAY_FPS         1
-#define DISPLAY_SAMPLE_DESC 0
+  const bool USE_DEPLOY_STATMENT = false; // à switcher sur true lors de la publication de la sandbox
+  const bool DISPLAY_FPS         = true;
+  const bool DISPLAY_SAMPLE_DESC = false;
 
   typedef void(*Synchro)   (void);
   struct Sample
@@ -120,7 +120,7 @@ namespace
   };
 
   //u32 sample_index = SAMPLE_INDEX_DEFAULT;
-  u32 sample_index = SAMPLE_INDEX_KEYBOARD;
+  u32 sample_index = SAMPLE_INDEX_FONT;
 }
 
 namespace app

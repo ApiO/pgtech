@@ -332,8 +332,8 @@ namespace pge
       
       handle_cmd_args(argc, argv, cfg, sch, src, data);
 
-      sprintf(src,  "E:/[Proto_Gecko]/gonp/resources");
-      sprintf(data, "E:/[Proto_Gecko]/gonp/data");
+      //sprintf(src,  "E:/[Proto_Gecko]/gonp/resources");
+      //sprintf(data, "E:/[Proto_Gecko]/gonp/data");
 
       OUTPUT("%s\n\t\tCompile Server\n%s", LINE, LINE);
 

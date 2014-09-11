@@ -19,9 +19,8 @@ function hide_form() {
     $("#config").hide();
 }
 
-function generate_pgi(data, outputName) {
+function generate_pgi(data, outputName, outputPath) {
 	var spineObject = JSON.parse(data);
-	var outputPath = path.normalize(source_path + "/" + outputName + ".pgi");
 	
 	mkdirp.sync(path.dirname(outputPath));
 
@@ -32,7 +31,7 @@ function generate_pgi(data, outputName) {
 	//-------------------------------------------------------------------------
 
 	f.write(util.format("{\n\"units\": {"));
-	f.write(util.format("\n\t\"%s\": {", outputName));
+	f.write(util.format("\n\t\"%s\": {", "default"));
 
 	f.write("\n\t\t\"nodes\": {");
 	for (var i in spineObject.bones) {
@@ -160,7 +159,7 @@ function generate_pgi(data, outputName) {
 	}
 
 	f.write("\"animsets\": {");
-	f.write(util.format("\n\t\"%s\": {", outputName));
+	f.write(util.format("\n\t\"%s\": {", "default"));
 
 	f.write("\n\t\t\"tracks\": {");
 
@@ -325,8 +324,8 @@ function generate_pgi(data, outputName) {
 	hide_form(); 	
 		
 	var msg = "<p class=\"text-success\">Resource created at:\n" + outputPath+"</p>";
-	$('#message').empty();
-	$('#message').append(msg);
+	$('#main_message').empty();
+	$('#main_message').append(msg);
 }
 
 
@@ -342,15 +341,19 @@ function submit() {
     fs.readFile(spinePath, 'utf8', function (err, data) {
         if (err) return alert(err);
 
+		var outputPath = path.normalize(source_path + "/" + outputName + ".pgi");
+		
 		try{
-			generate_pgi(data, outputName);
+			generate_pgi(data, outputName, outputPath);
 		} 
 		catch(e){			
 			var re = new RegExp(String.fromCharCode(10), 'g');
 			var stack = e.stack.replace(re, "</p><p class=\"text-alert\">");
 			var msg = "<p class=\"text-alert\">" + e.message + "</p><p class=\"text-alert\">" + stack + "</p>";
 			$('#message').empty();
-			$('#message').append(msg);
+			$('#config_message').append(msg);
+			
+			if (fs.existsSync(outputPath)) { fs.unlinkSync(outputPath); }
 		}
 	});
 }

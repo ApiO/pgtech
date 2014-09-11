@@ -233,6 +233,8 @@ namespace pge
             sprite_system::set_frame(w.sprite_system, cr->component, sprite_track_frames[frame]);
           }
         }
+
+        //events handling
       }
 #if CHRONO_STEPS
       app_watcher::save_value(WL_ANIMATION_TO_SCENE, get_elapsed_time_in_ms(timer));
