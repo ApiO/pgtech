@@ -70,7 +70,7 @@ namespace
 
     const char *start = text->string;
     const char *send  = text->string + strlen(text->string);
-    f32 line_height   = font_resource::line_height(text->font);
+    f32 line_height   = (f32)font_resource::line_height(text->font);
 
     while (start < send) {
       start += mbtowc(&wctmp, start, start - send);
