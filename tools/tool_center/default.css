@@ -1,4 +1,4 @@
-.bg{
+.content_body{
     background: url('bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -10,7 +10,7 @@
 }
 
 .navigation-bar {
-	background-color: #002435 !important;
+	background-color: transparent !important;
 	border:0;
 	position: absolute;
 	top:0px;
@@ -30,4 +30,19 @@
 
 .tool_center-bar{
 	background-color: #002435 !important;
+}
+
+.content h1{
+	margin-bottom: 24px;
+}
+
+.metro .dropdown-toggle:after {
+	margin-left: -5px;
+	top: 0;
+}
+.metro .dropdown-menu {
+	border: none;
+}
+.metro .dropdown-menu  {
+	border: none;
 }

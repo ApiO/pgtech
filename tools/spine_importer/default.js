@@ -261,6 +261,7 @@ function generate_pgi(data, outputName, outputPath) {
 
 
 		if (spineObject.animations[anim].slots) {
+			if (spineObject.animations[anim].bones) f.write(",");
 			f.write("\n\t\t\t\t\"sprite\": {");
 
 			var slotIndex = 0;
@@ -323,7 +324,7 @@ function generate_pgi(data, outputName, outputPath) {
 	$("#resource_name").val("");
 	hide_form(); 	
 		
-	var msg = "<p class=\"text-success\">Resource created at:\n" + outputPath+"</p>";
+	var msg = "<p class=\"text-success\" >PGI created.</p>";	
 	$('#main_message').empty();
 	$('#main_message').append(msg);
 }

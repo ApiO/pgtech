@@ -33,3 +33,6 @@ body{
 	margin: 0;
 	font-size: smaller;
 }
+.metro input {
+	width: 100%;
+}

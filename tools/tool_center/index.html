@@ -11,10 +11,11 @@
     <title>Tool center</title>
   </head>
   <body class="metro tool_center">
-
-	<div class="content bg" >
+  	
+	<div class="content content_body" >
 		<div class="content" >
-			<h1 id="project_name"></h1>
+		
+			<h1 id="project_name"></h1>	
 			
 			<div id="run" class="tile bg-green">
 				<div class="tile-content icon">
@@ -134,15 +135,22 @@
 				<div class="tile-status">
 					<span class="name">Resources</span>
 				</div>
-			</div>	
-
-		</div>
+			</div>				
+		</div>			
 	</div>
 	
-  
   	<nav class="navigation-bar">
 	    <nav class="navigation-bar-content">
-	        <a class="element" href="#">TOOL CENTER</a>
+		
+	        <a class="element dropdown-toggle" href="#">TOOL CENTER</a>
+            <ul class="element dropdown-menu" data-role="dropdown" >
+                <li><a href="#">Windows 8</a></li>
+                <li><a href="#">Skype</a></li>
+                <li><a href="#">Internet Explorer</a></li>
+                <li><a href="#">Office</a></li>
+            </ul>
+			
+			
 	        <a class="element place-right" href="#" id="win-close"><span class="icon-cancel-2"></span></a>
 	        <span class="element-divider place-right"></span>
 	        <a class="element place-right" href="#" id="win-maximize"><span class="icon-window"></span></a>
