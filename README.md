@@ -10,7 +10,7 @@ The solution works with some known bugs and, surely, some not already known.
 
 ## Documentation ##
 
-You can go to the repo's wiki to find some usefull informaions.
+You can go to the [repo's wiki](https://bitbucket.org/Drio/pgtech/wiki/Home) to find some usefull informaions.
 
 ## License ##
 ```
