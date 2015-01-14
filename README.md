@@ -6,7 +6,7 @@
 
 Proto Gecko Technologies or pgtech is a cross-platform game engine project.
 This is the very first publish of the project.
-The solution works with some known bugs and, surely, some not already known..
+The solution works with some known bugs and, surely, some not already known.
 
 ## Documentation ##
 
