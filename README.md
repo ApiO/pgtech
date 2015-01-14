@@ -1,34 +1,16 @@
 # PGTECH #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
-
 ![Sans titre.png](https://bitbucket.org/repo/roX8e9/images/1848636159-Sans%20titre.png)
+
+## Introduction ##
+
+Proto Gecko Technologies or pgtech is a cross-platform game engine project.
+This is the very first publish of the project.
+The solution works with some known bugs and, surely, some not already known..
+
+## Documentation ##
+
+You can go to the repo's wiki to find some usefull informaions.
 
 ## License ##
 ```
