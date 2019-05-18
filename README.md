@@ -19,9 +19,8 @@ In the meanwhile, here is first documentation of our work. I hope you will enjoy
 You can go to the [repo's wiki](https://github.com/ApiO/pgtech/wiki) to find some usefull informaions.
 
 ## License ##
-```
-#!text
 
+```
 The zlib/libpng License
 
 Copyright © 2014 Adrien Cuisinier	
