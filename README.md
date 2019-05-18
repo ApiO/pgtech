@@ -1,6 +1,6 @@
 # PGTECH #
 
-![Sans titre.png](https://bitbucket.org/repo/roX8e9/images/1848636159-Sans%20titre.png)
+![Sans titre.png](https://github.com/ApiO/pgtech/blob/master/protogecko.png)
 
 ## Introduction ##
 
