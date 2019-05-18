@@ -1,12 +1,16 @@
-# PGTECH #
-
 ![Sans titre.png](https://github.com/ApiO/pgtech/blob/master/docs/protogecko.png)
 
 ## Introduction ##
 
-Proto Gecko Technologies or pgtech is a cross-platform game engine project.
-This is the very first publish of the project.
-The solution works with some known bugs and, surely, some not already known.
+Proto Gecko Technologies or pgtech is a game engine project which started in 2012 with a small team, a really small one in fact, as we were only two dudes involved. The main goal was to learn by ourselves how the video games are made in order to create our first game.
+
+All I can say after two years is that this project was ridiculously ambitious and difficult. We have persevered however and we have now understood the complexity of each domain we came across, such as physics, animation, sound, graphics and so many others.
+
+During this adventure we have learned a lot from the open source communities, bloggers and employees from huge companies. So thank you all. Without your generosity this project would have failed.
+
+Now we have established a workflow, we have finished most of our planned tools and the game engine is functional. All of our work will be published shortly under a friendly open source licence, along with a full set of code samples and documentation.
+
+In the meanwhile, here is first documentation of our work. I hope you will enjoy it.
 
 [![](https://github.com/ApiO/pgtech/blob/master/docs/protogecko-youtube.jpg)](https://www.youtube.com/watch?v=OJymJHQ6JhA&list=PLk1kRWgchcuZAb91jy1685TO_RXpaFn_2)
 
