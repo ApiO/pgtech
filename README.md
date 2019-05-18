@@ -8,9 +8,11 @@ Proto Gecko Technologies or pgtech is a cross-platform game engine project.
 This is the very first publish of the project.
 The solution works with some known bugs and, surely, some not already known.
 
+![](https://github.com/ApiO/pgtech/blob/master/doc/protogecko.png) [![](https://github.com/ApiO/pgtech/blob/master/doc/protogecko-youtube.jpg)](https://www.youtube.com/watch?v=OJymJHQ6JhA&list=PLk1kRWgchcuZAb91jy1685TO_RXpaFn_2)
+
 ## Documentation ##
 
-You can go to the [repo's wiki](https://bitbucket.org/Drio/pgtech/wiki/Home) to find some usefull informaions.
+You can go to the [repo's wiki](https://github.com/ApiO/pgtech/wiki) to find some usefull informaions.
 
 ## License ##
 ```
